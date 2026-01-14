@@ -88,8 +88,8 @@ export default function ContactPage() {
               <CardTitle className="font-serif">Call us</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-muted-foreground pb-8">
-              <p>+975-1755-6636</p>
-              <p>+975-7711-1400</p>
+              <p>+975-1777-7777</p>
+              <p>+975-7777-7777</p>
             </CardContent>
           </Card>
 

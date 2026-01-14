@@ -111,7 +111,7 @@ export function Footer() {
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+975-1755-6636</span>
+                <span>+975-177-7777</span>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
@@ -123,7 +123,7 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-100 flex justify-center items-center w-full">
-          <div className="text-xs text-zinc-400 text-center tracking-widest font-medium uppercase">
+          <div className="text-xs text-zinc-400 text-center tracking-widest font-medium">
             © {new Date().getFullYear()} Hidden Kingdom Tour ◉ All Rights Reserved
           </div>
         </div>

@@ -112,7 +112,7 @@ export function Navbar() {
             <div className="flex items-center gap-6 text-zinc-500">
               <span className="flex items-center gap-2 hover:text-primary transition-colors cursor-pointer group">
                 <Phone className="h-3.5 w-3.5 text-primary group-hover:rotate-12 transition-transform" />
-                <span>+975-1755-6636</span>
+                <span>+975-1777-7777</span>
               </span>
               <span className="hidden sm:flex items-center gap-2 hover:text-primary transition-colors cursor-pointer group">
                 <Mail className="h-3.5 w-3.5 text-primary group-hover:-translate-y-0.5 transition-transform" />

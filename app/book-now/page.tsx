@@ -391,7 +391,7 @@ function BookingForm() {
                 <div className="space-y-3">
                   <a href="tel:+97517556636" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                     <Phone className="w-4 h-4 text-primary" />
-                    +975-1755-6636
+                    +975-1777-7777
                   </a>
                   <a href="mailto:info@hiddenkingdomtour.com" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                     <Mail className="w-4 h-4 text-primary" />

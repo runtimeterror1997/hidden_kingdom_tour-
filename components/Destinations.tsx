@@ -14,7 +14,7 @@ export function Destinations() {
     <SectionWrapper>
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
         <div className="max-w-3xl space-y-4">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold tracking-[0.1em] text-[#2d3663] uppercase">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold tracking-[0.1em] text-[#2d3663] ">
             Destinations
           </h2>
           <p className="text-zinc-500 text-base md:text-lg leading-relaxed">
@@ -25,7 +25,7 @@ export function Destinations() {
           href="/destinations" 
           className="group flex items-center gap-2 text-primary font-bold tracking-widest text-sm hover:gap-3 transition-all"
         >
-          VIEW ALL DESTINATIONS
+          View All Destinations
           <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
         </Link>
       </div>

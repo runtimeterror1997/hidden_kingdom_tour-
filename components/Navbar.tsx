@@ -80,6 +80,7 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false);
   const [isMounted, setIsMounted] = React.useState(false);
   const [isOpen, setIsOpen] = React.useState(false);
+  const [activeMenu, setActiveMenu] = React.useState<string | null>(null);
 
   React.useEffect(() => {
     setIsMounted(true);
@@ -155,9 +156,15 @@ export function Navbar() {
             {/* Desktop Navigation */}
             <nav className="hidden xl:flex items-center gap-2">
               {navItems.map((item) => (
-                <div key={item.name} className="relative group/nav py-2">
+                <div 
+                  key={item.name} 
+                  className="relative group/nav py-2"
+                  onMouseEnter={() => setActiveMenu(item.name)}
+                  onMouseLeave={() => setActiveMenu(null)}
+                >
                   <Link
                     href={item.href}
+                    onClick={() => setActiveMenu(null)}
                     className={cn(
                       "relative flex items-center gap-1.5 px-4 py-2 text-[15px] font-bold tracking-tight transition-all duration-300 whitespace-nowrap overflow-hidden group/link",
                       "text-zinc-800 hover:text-primary"
@@ -165,7 +172,10 @@ export function Navbar() {
                   >
                     <span>{item.name}</span>
                     {item.type === "mega-menu" && (
-                      <ChevronDown className="h-3.5 w-3.5 transition-transform duration-500 group-hover/nav:rotate-180 text-zinc-400 group-hover/nav:text-primary" />
+                      <ChevronDown className={cn(
+                        "h-3.5 w-3.5 transition-transform duration-500 text-zinc-400 group-hover/nav:text-primary",
+                        activeMenu === item.name ? "rotate-180" : ""
+                      )} />
                     )}
                     {/* Animated Underline */}
                     <span className="absolute bottom-0 left-4 right-4 h-0.5 bg-primary scale-x-0 group-hover/link:scale-x-100 transition-transform duration-300 origin-left" />
@@ -176,7 +186,12 @@ export function Navbar() {
                     <>
                       <div className="absolute top-full left-0 w-full h-4" />
                       
-                      <div className="absolute top-[calc(100%+0.5rem)] -left-[300px] min-w-[1050px] bg-white text-zinc-900 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden opacity-0 invisible group-hover/nav:opacity-100 group-hover/nav:visible transition-all duration-500 z-[100] translate-y-4 group-hover/nav:translate-y-0 border border-zinc-100 backdrop-blur-3xl lg:flex items-stretch">
+                      <div className={cn(
+                        "absolute top-[calc(100%+0.5rem)] -left-[300px] min-w-[1050px] bg-white text-zinc-900 shadow-[0_25px_80px_-20px_rgba(0,0,0,0.15)] rounded-2xl overflow-hidden transition-all duration-500 z-[100] border border-zinc-100 backdrop-blur-3xl lg:flex items-stretch",
+                        activeMenu === item.name 
+                          ? "opacity-100 visible translate-y-0" 
+                          : "opacity-0 invisible translate-y-4"
+                      )}>
                         
                         {/* Categories List (Sidebar) */}
                         <div className="w-[240px] bg-zinc-50/50 p-6 space-y-1 border-r border-zinc-100">
@@ -187,6 +202,7 @@ export function Navbar() {
                               <Link
                                 key={cat.name}
                                 href={cat.href}
+                                onClick={() => setActiveMenu(null)}
                                 className="group/cat flex items-center gap-3 px-4 py-3 text-[13px] font-bold text-zinc-600 hover:text-primary hover:bg-white transition-all rounded-xl relative border border-transparent hover:border-zinc-200 hover:shadow-sm"
                               >
                                 <div className="w-8 h-8 rounded-lg bg-white border border-zinc-100 flex items-center justify-center text-zinc-400 group-hover/cat:text-primary group-hover/cat:border-primary/20 transition-colors">
@@ -213,7 +229,12 @@ export function Navbar() {
                             </h3>
                             <div className="flex flex-col gap-6">
                               {item.popularCultural?.map((tour) => (
-                                <Link key={tour.name} href={tour.href} className="group/item flex flex-col gap-1 transition-all">
+                                <Link 
+                                  key={tour.name} 
+                                  href={tour.href} 
+                                  onClick={() => setActiveMenu(null)}
+                                  className="group/item flex flex-col gap-1 transition-all"
+                                >
                                   <div className="flex items-center gap-2">
                                     <span className="text-[15px] font-bold text-zinc-800 group-hover/item:text-primary transition-colors leading-tight">{tour.name}</span>
                                     {tour.featured && <Badge variant="secondary" className="bg-primary/10 text-primary text-[9px] h-4 px-1 px-1.5 border-none">TOP</Badge>}
@@ -235,7 +256,12 @@ export function Navbar() {
                             </h3>
                             <div className="flex flex-col gap-6">
                               {item.popularTrekking?.map((tour) => (
-                                <Link key={tour.name} href={tour.href} className="group/item flex flex-col gap-1 transition-all">
+                                <Link 
+                                  key={tour.name} 
+                                  href={tour.href} 
+                                  onClick={() => setActiveMenu(null)}
+                                  className="group/item flex flex-col gap-1 transition-all"
+                                >
                                   <div className="flex items-center gap-2">
                                     <span className="text-[15px] font-bold text-zinc-800 group-hover/item:text-primary transition-colors leading-tight">{tour.name}</span>
                                     {tour.difficulty && <span className={cn("text-[9px] px-1.5 py-0.5 rounded font-black uppercase text-white", tour.difficulty === 'Hard' ? 'bg-orange-500' : 'bg-emerald-500')}>{tour.difficulty}</span>}
@@ -257,7 +283,12 @@ export function Navbar() {
                             </h3>
                             <div className="flex flex-col gap-6">
                               {item.upcomingFestivals?.map((tour) => (
-                                <Link key={tour.name} href={tour.href} className="group/item bg-white p-4 rounded-xl border border-zinc-100 hover:border-primary/20 hover:shadow-md transition-all">
+                                <Link 
+                                  key={tour.name} 
+                                  href={tour.href} 
+                                  onClick={() => setActiveMenu(null)}
+                                  className="group/item bg-white p-4 rounded-xl border border-zinc-100 hover:border-primary/20 hover:shadow-md transition-all"
+                                >
                                   <div className="flex flex-col gap-2">
                                     <div className="flex items-center justify-between">
                                       <span className="text-[14px] font-bold text-zinc-800 group-hover/item:text-primary transition-colors leading-tight">{tour.name}</span>
@@ -379,11 +410,11 @@ export function Navbar() {
                       <div className="space-y-6">
                         <div className="space-y-3">
                           <p className="text-[10px] font-black text-zinc-400 tracking-[0.2em] uppercase">Connect With Us</p>
-                          <a href="tel:+97517556636" className="text-xl font-bold text-white flex items-center gap-4 hover:text-primary transition-colors group">
+                          <a href="tel:+97517777777" className="text-xl font-bold text-white flex items-center gap-4 hover:text-primary transition-colors group">
                             <div className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center group-hover:bg-primary transition-colors">
                               <Phone className="h-5 w-5" />
                             </div>
-                            +975-1755-6636
+                            +975-1777-7777
                           </a>
                         </div>
                         <Button 

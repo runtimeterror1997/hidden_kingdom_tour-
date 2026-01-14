@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export function WhatsAppButton() {
-  const phoneNumber = "97517556636";
+  const phoneNumber = "97517777777";
   const message = "Hello Hidden Kingdom Tour, I'm interested in learning more about your tour packages.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 

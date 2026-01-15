@@ -54,14 +54,14 @@ export function TestimonialCarousel() {
         align: "center",
         loop: true,
       }}
-      className="w-full"
+      className="w-full max-w-5xl mx-auto"
     >
-      <CarouselContent className="-ml-4">
+      <CarouselContent className="-ml-0 md:-ml-4">
         {testimonials.map((testimonial) => (
-          <CarouselItem key={testimonial.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={testimonial.id} className="pl-0 md:pl-4 basis-full md:basis-1/2 lg:basis-1/3">
             <div className="p-1 h-full">
               <Card className="h-full border-none shadow-none bg-zinc-50 dark:bg-zinc-900">
-                <CardContent className="flex flex-col gap-4 p-6 h-full text-left">
+                <CardContent className="flex flex-col gap-4 p-6 h-full items-center text-center md:items-start md:text-left">
                   <div className="flex gap-1 text-primary">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star key={i} className="w-4 h-4 fill-current" />

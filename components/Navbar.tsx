@@ -424,7 +424,7 @@ export function Navbar() {
           </Link>
 
           <div className="flex items-center gap-3">
-             <a href="tel:+97517777777" className={cn(
+             <a href="tel:+97517257452" className={cn(
                "h-10 w-10 rounded-full flex items-center justify-center transition-all duration-300 shadow-sm",
                isScrolled ? "bg-zinc-100 text-primary" : "bg-white/10 text-white backdrop-blur-md"
              )}>

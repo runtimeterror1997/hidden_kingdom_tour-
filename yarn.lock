@@ -1237,10 +1237,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/swc-darwin-arm64@npm:16.1.4, @next/swc-darwin-arm64@npm:^16.1.2":
+"@next/swc-darwin-arm64@npm:16.1.4":
   version: 16.1.4
   resolution: "@next/swc-darwin-arm64@npm:16.1.4"
-  checksum: 941930bd86dafd719779796742d16a5bdfb31906cbea5b82d3d4c5996b558c0c5cbca84cf9676306d86e351d3073d3cb815140c1bd3eab2348b9831009b0e8d6
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
@@ -4453,7 +4452,6 @@ __metadata:
   resolution: "hidden_kingdom_tour@workspace:."
   dependencies:
     "@hookform/resolvers": ^5.2.2
-    "@next/swc-darwin-arm64": ^16.1.2
     "@radix-ui/react-accordion": ^1.2.12
     "@radix-ui/react-avatar": ^1.1.11
     "@radix-ui/react-dialog": ^1.1.15

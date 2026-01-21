@@ -80,18 +80,37 @@ function BookingForm() {
     }
   }, [searchParams, form]);
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Booking Inquiry Sent!", {
-        description: "One of our travel experts will contact you shortly to finalize your itinerary.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/book-tour', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to submit booking');
+      }
+
+      toast.success("Booking Inquiry Sent!", {
+          description: "One of our travel experts will contact you shortly to finalize your itinerary.",
+      });
+      form.reset();
+    } catch (error: any) {
+      console.error(error);
+      toast.error("Submission Failed", {
+        description: error.message || "Please try again later or contact us directly via email.",
+      });
+    }
   }
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center pt-20">
+      <section className="relative h-[65vh] min-h-[500px] flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/home/flags.png" 
@@ -333,8 +352,13 @@ function BookingForm() {
                     />
                     
                     <div className="pt-4">
-                      <Button type="submit" size="lg" className="w-full md:w-auto px-12 h-14 bg-primary hover:bg-primary/90 text-white font-bold rounded-full transition-all hover:scale-105 shadow-lg">
-                        Submit Booking Request
+                      <Button 
+                        type="submit" 
+                        size="lg" 
+                        className="w-full md:w-auto px-12 h-14 bg-primary hover:bg-primary/90 text-white font-bold rounded-full transition-all hover:scale-105 shadow-lg"
+                        disabled={form.formState.isSubmitting}
+                      >
+                        {form.formState.isSubmitting ? "Sending Request..." : "Submit Booking Request"}
                       </Button>
                     </div>
                   </form>
@@ -393,9 +417,9 @@ function BookingForm() {
                     <Phone className="w-4 h-4 text-primary" />
                     +975-1777-7777
                   </a>
-                  <a href="mailto:info@hiddenkingdomtour.com" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
+                  <a href="mailto:oasistours.info@gmail.com" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                     <Mail className="w-4 h-4 text-primary" />
-                    info@hiddenkingdomtour.com
+                    oasistours.info@gmail.com
                   </a>
                 </div>
               </CardContent>

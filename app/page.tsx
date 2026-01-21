@@ -14,8 +14,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      {/* Hero Section */}
-      <section className="relative h-[100dvh] min-h-[600px] flex items-center justify-center overflow-hidden bg-zinc-900">
+      <section className="relative h-[100dvh] min-h-[800px] flex items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0 z-0">
            <video 
              autoPlay 
@@ -30,11 +29,11 @@ export default function Home() {
            <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
         </div>
         
-        <div className="relative z-10 container mx-auto px-4 md:px-8 text-center space-y-6">
-          <span className="inline-block py-1.5 px-4 rounded-full bg-black/20 backdrop-blur-md border border-white/10 text-[12px] font-bold tracking-[0.2em] uppercase text-zinc-100/60 animate-in slide-in-from-bottom-4 duration-700 fade-in">
+        <div className="relative z-10 container mx-auto px-4 md:px-8 md:pt-16 text-center space-y-6">
+          <span className="inline-block py-1.5 px-4 rounded-full bg-black/20 backdrop-blur-md border border-white/10 text-[10px] font-bold tracking-[0.2em] uppercase text-zinc-100/60 animate-in slide-in-from-bottom-4 duration-700 fade-in">
             Welcome to the Land of the Thunder Dragon
           </span>
-          <h1 className="text-4xl md:text-4xl lg:text-6xl font-serif font-bold tracking-tight leading-[1.1] text-zinc-100/95 animate-in slide-in-from-bottom-8 duration-1000 fade-in delay-100">
+          <h1 className="text-3xl md:text-3xl lg:text-4xl font-serif font-bold tracking-tight leading-[1.1] text-zinc-100/95 animate-in slide-in-from-bottom-8 duration-1000 fade-in delay-100">
             Discover the <br /> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400/80 to-orange-500/80">Hidden Kingdom</span>
           </h1>

@@ -127,12 +127,12 @@ export default function ItineraryDownloadButton({ tour }: ItineraryDownloadButto
 
             // Footer
             new Paragraph({
-              text: "\n\nThank you for choosing Hidden Kingdom Tour Bhutan!",
+              text: "\n\nThank you for choosing OASIS Tours and Treks Bhutan!",
               alignment: AlignmentType.CENTER,
               spacing: { before: 800 },
             }),
             new Paragraph({
-              text: "Website: www.bhutanhappiness.com",
+              text: "Website: www.oasistours.com",
               alignment: AlignmentType.CENTER,
             }),
           ],

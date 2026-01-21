@@ -19,7 +19,7 @@ export default function DestinationsPage() {
   return (
     <div className="min-h-screen pt-0 pb-14 bg-zinc-50/50">
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden bg-zinc-900">
+      <section className="relative h-[65vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-zinc-900">
         <div className="absolute inset-0">
           <Image
             src="/assets/home/dochula.png"
@@ -62,11 +62,6 @@ export default function DestinationsPage() {
               </div>
               
               <div className="p-8 space-y-4 flex-1 flex flex-col">
-                {/* <div className="flex items-center gap-2 text-primary">
-                  <MapPin className="h-4 w-4" />
-                  <span className="text-xs font-bold tracking-widest uppercase">Destination</span>
-                </div> */}
-                
                 <h3 className="text-2xl font-serif font-bold text-zinc-900 group-hover:text-primary transition-colors">
                   {dest.name}
                 </h3>
@@ -76,52 +71,11 @@ export default function DestinationsPage() {
                 </p>
                 
                 <div className="pt-4 border-t border-zinc-50 flex items-center justify-between">
-                  <Dialog>
-                    <DialogTrigger asChild>
-                      <button className="inline-flex items-center gap-2 text-zinc-900 font-bold text-xs tracking-widest hover:text-primary transition-colors group/btn">
-                        VIEW DETAILS <Info className="h-3 w-3 transition-transform group-hover/btn:scale-110" />
-                      </button>
-                    </DialogTrigger>
-                    <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden flex flex-col p-0 rounded-3xl border-none shadow-2xl">
-                      <div className="relative h-[250px] w-full shrink-0">
-                        <Image src={dest.image} alt={dest.name} fill className="object-cover" />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                        <div className="absolute bottom-8 left-8 text-white">
-                          <DialogTitle className="text-4xl font-serif font-bold mb-1">{dest.name}</DialogTitle>
-                          <div className="flex items-center gap-2 opacity-80 font-medium tracking-wide">
-                            <MapPin className="h-4 w-4" />
-                            <span>{dest.altitude}</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="p-8 md:p-10 overflow-y-auto custom-scrollbar">
-                        <div className="prose prose-zinc max-w-none">
-                          {dest.fullDescription.split('\n\n').map((paragraph, i) => (
-                            <p key={i} className="text-zinc-600 leading-relaxed mb-6 text-lg last:mb-0">
-                              {paragraph}
-                            </p>
-                          ))}
-
-                          <div className="mt-10 pt-10 border-t border-zinc-100">
-                            <h3 className="text-2xl font-serif font-bold mb-6 text-zinc-900">Must-Visit Places</h3>
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                              {dest.mustVisit.map((place, i) => (
-                                <li key={i} className="flex items-start gap-3 group/item">
-                                  <div className="mt-2 h-2 w-2 rounded-full bg-primary shrink-0 transition-transform group-hover/item:scale-125" />
-                                  <span className="text-zinc-700 font-medium tracking-tight leading-snug">{place}</span>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        </div>
-                        {/* <div className="mt-10 pt-8 border-t border-zinc-100 flex justify-end">
-                           <Button asChild className="rounded-full px-8 h-12 font-bold tracking-widest">
-                             <Link href={`/tours?destination=${dest.id}`}>EXPLORE TOURS IN {dest.name.toUpperCase()} <ArrowRight className="ml-2 h-4 w-4" /></Link>
-                           </Button>
-                        </div> */}
-                      </div>
-                    </DialogContent>
-                  </Dialog>
+                  <Button asChild variant="ghost" className="pl-0 text-zinc-900 font-bold text-xs tracking-widest hover:text-primary transition-colors group/btn">
+                    <Link href={`/destinations/${dest.id}`} className="flex items-center gap-2">
+                       LEARN MORE <ArrowRight className="h-3 w-3 transition-transform group-hover/btn:translate-x-1" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>

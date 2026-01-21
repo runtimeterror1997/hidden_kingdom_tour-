@@ -9,7 +9,7 @@ const categories = [
     id: "cultural",
     title: "Cultural Tours",
     description: "Immerse yourself in the rich traditions, ancient dzongs, and daily life of Bhutan.",
-    image: "/assets/home/cultural.png"
+    image: "/assets/home/culture_dance.png"
   },
   {
     id: "trekking",
@@ -40,14 +40,25 @@ const categories = [
 export default function ToursIndexPage() {
   return (
     <div className="bg-zinc-50 dark:bg-black min-h-screen">
-      <div className="bg-zinc-900 text-white py-20">
-        <div className="container mx-auto px-4 text-center space-y-4">
-          <h1 className="text-4xl md:text-5xl font-serif font-bold">Discover Bhutan</h1>
-          <p className="max-w-xl mx-auto text-white/80">
+      {/* Hero Section */}
+      <section className="relative h-[60vh] min-h-[500px] flex items-center justify-center mb-16">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src="/assets/home/dochula.png" 
+            alt="Packages" 
+            fill 
+            className="object-cover" 
+            priority
+          />
+          <div className="absolute inset-0 bg-black/60" />
+        </div>
+        <div className="relative z-10 text-center text-white px-4 pt-20">
+          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-4">Discover Bhutan</h1>
+          <p className="max-w-xl mx-auto text-lg text-white/90">
             Choose your travel style and explore the Land of the Thunder Dragon.
           </p>
         </div>
-      </div>
+      </section>
 
       <SectionWrapper>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

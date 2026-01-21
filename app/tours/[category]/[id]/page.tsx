@@ -30,7 +30,7 @@ export default async function TourDetailsPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* Detail Header */}
-      <div className="relative h-[60vh] md:h-[90vh] bg-zinc-900 flex items-end">
+      <div className="relative h-[40vh] min-h-[500px] bg-zinc-900 flex items-end">
          <div className="absolute inset-0">
              <Image 
                 src={tour.detailImage || tour.image} 

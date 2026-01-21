@@ -20,11 +20,12 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Hidden Kingdom Tour",
-  description: "Experience the magic of Bhutan with Hidden Kingdom Tour.",
+  title: "OASIS Tours and Treks",
+  description: "Experience the magic of Bhutan with OASIS Tours and Treks.",
 };
 
 import { Toaster } from "@/components/ui/sonner";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
@@ -38,7 +39,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased flex flex-col min-h-screen overflow-x-hidden`}
       >
         <Navbar />
-        <main className="flex-1 pt-20">
+        <main className="flex-1">
           {children}
         </main>
         <Footer />

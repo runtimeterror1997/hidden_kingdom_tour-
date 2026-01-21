@@ -4,8 +4,8 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export function WhatsAppButton() {
-  const phoneNumber = "97517777777";
-  const message = "Hello Hidden Kingdom Tour, I'm interested in learning more about your tour packages.";
+  const phoneNumber = "97517257452";
+  const message = "Hello OASIS Tours and Treks, I'm interested in learning more about your tour packages.";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -16,9 +16,9 @@ export function WhatsAppButton() {
         rel="noopener noreferrer"
         className="block group"
       >
-        <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg shadow-md border border-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap hidden lg:block">
+        <div className="absolute left-full ml-4 top-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg shadow-md border border-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap hidden lg:block">
           <p className="text-sm font-bold text-[#25D366]">Chat with us on WhatsApp</p>
-          <div className="absolute left-full top-1/2 -translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-white border-b border-l border-zinc-100 rotate-45" />
+          <div className="absolute right-full top-1/2 -translate-y-1/2 translate-x-1/2 w-2 h-2 bg-white border-b border-l border-zinc-100 rotate-[135deg]" />
         </div>
         
         <Button 

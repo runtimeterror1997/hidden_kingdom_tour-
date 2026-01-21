@@ -2,13 +2,12 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 import { 
   Facebook, 
   Instagram, 
   Twitter, 
   Linkedin, 
-  Youtube, 
+  Youtube,
   Mail, 
   MapPin, 
   Phone, 
@@ -18,11 +17,15 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ChatBot } from "./ChatBot";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { useState } from "react";
 
 export function Footer() {
   const [isChatOpen, setIsChatOpen] = useState(false);
+
+  const toggleTawk = () => {
+    setIsChatOpen(!isChatOpen);
+  };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -39,19 +42,55 @@ export function Footer() {
           {/* Column 1: Brand identity */}
           <div className="lg:col-span-3 space-y-6 flex flex-col items-center md:items-start text-center md:text-left">
             <div className="flex items-center gap-2">
-              <span className="text-[22px] font-serif font-bold tracking-tight text-[#2d3663]">
-                Hidden Kingdom <span className="text-primary italic">Tour</span>
+              <span className="text-[18px] font-sans font-black tracking-tighter text-[#2d3663] uppercase">
+                OASIS <span className="text-primary italic">Tours & Treks</span>
               </span>
             </div>
             <p className="text-sm text-zinc-500 leading-relaxed">
               Explore the untouched beauty of the Land of the Thunder Dragon. Specializing in high-end, personalized journeys.
             </p>
-            <div className="flex gap-3 justify-center md:justify-start">
-              {[Facebook, Instagram, Youtube].map((Icon, i) => (
-                <Link key={i} href="#" className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all">
-                  <Icon className="h-4 w-4" />
-                </Link>
-              ))}
+
+            <div className="flex gap-3 justify-center ">
+              {/* Facebook */}
+              <a 
+                href="https://www.facebook.com/people/Oasis-tour-and-trek/61586763656788/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                </svg>
+              </a>
+              
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/oasistoursandtreks_?igsh=MXJtM2ttajRxOGF3Nw==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
+                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                </svg>
+              </a>
+
+              {/* TikTok */}
+              <a 
+                href="https://www.tiktok.com/@touragent2?_r=1&_t=ZS-93G2CHp1uTQ" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none" className="h-4 w-4">
+                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                </svg>
+              </a>
+
+              {/* YouTube */}
+              
             </div>
           </div>
 
@@ -77,8 +116,9 @@ export function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-zinc-500 font-medium">
               <li><Link href="/about" className="hover:text-primary transition-colors">About Us</Link></li>
+              <li><Link href="/know-bhutan" className="hover:text-primary transition-colors">Know Bhutan</Link></li>
+              <li><Link href="/flights" className="hover:text-primary transition-colors">Flights</Link></li>
               <li><Link href="/hotels" className="hover:text-primary transition-colors">Hotels</Link></li>
-              <li><Link href="/travel" className="hover:text-primary transition-colors">Travel Info</Link></li>
               <li><Link href="/faq" className="hover:text-primary transition-colors">FAQs</Link></li>
             </ul>
           </div>
@@ -107,15 +147,15 @@ export function Footer() {
             <ul className="space-y-4 text-sm text-zinc-500 flex flex-col items-center md:items-start">
               <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <MapPin className="h-5 w-5 text-primary shrink-0" />
-                <span>Ugyen Building, Babesa, Thimphu</span>
+                <span>Jurka, Dopshari, Paro</span>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <span>+975-177-7777</span>
+                <span>+975-17257452</span>
               </li>
               <li className="flex flex-col md:flex-row items-center md:items-start gap-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:info@hiddenkingdomtour.com" className="hover:text-primary transition-colors">info@hiddenkingdomtour.com</a>
+                <a href="mailto:oasistours.info@gmail.com" className="hover:text-primary transition-colors">oasistours.info@gmail.com</a>
               </li>
             </ul>
           </div>
@@ -124,42 +164,57 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-zinc-100 flex justify-center items-center w-full">
           <div className="text-xs text-zinc-400 text-center tracking-widest font-medium">
-            © {new Date().getFullYear()} Hidden Kingdom Tour ◉ All Rights Reserved
+            © {new Date().getFullYear()} OASIS TOURS & TREKS ◉ All Rights Reserved
           </div>
         </div>
       </div>
 
-      {/* Floating Action Buttons */}
-      <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-4">
-        {isChatOpen && (
-          <div className="absolute bottom-20 right-0 sm:right-4">
-             <ChatBot onClose={() => setIsChatOpen(false)} />
+      {/* Tawk.to Iframe Dialog */}
+      {isChatOpen && (
+        <div className="fixed bottom-24 right-6 w-[350px] sm:w-[400px] h-[500px] sm:h-[600px] bg-white rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] z-[99999] overflow-hidden border border-zinc-100 flex flex-col animate-in slide-in-from-bottom-5 duration-300">
+          <div className="bg-primary p-4 flex justify-between items-center text-white">
+            <span className="font-bold flex items-center gap-2">
+              <MessageCircle className="h-4 w-4" />
+              Live Support
+            </span>
+            <button onClick={() => setIsChatOpen(false)} className="hover:bg-white/20 p-1 rounded transition-colors">
+              <X className="h-4 w-4" />
+            </button>
           </div>
-        )}
-        <WhatsAppButton />
-        
-        <div className="relative group">
-          {/* Tooltip */}
-          <div className="absolute right-full mr-4 top-1/2 -translate-y-1/2 bg-white px-4 py-2 rounded-lg shadow-md border border-zinc-100 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap hidden lg:block">
-            <p className="text-sm font-bold text-primary">Chat with AI Guide</p>
-            <div className="absolute left-full top-1/2 -translate-y-1/2 -translate-x-1/2 w-2 h-2 bg-white border-b border-l border-zinc-100 rotate-45" />
-          </div>
-
-          <Button 
-            size="icon" 
-            onClick={() => setIsChatOpen(!isChatOpen)}
-            className={cn(
-              "h-12 w-12 rounded-full bg-primary hover:bg-primary/90 shadow-xl transition-all duration-300 hover:scale-110 relative",
-              !isChatOpen && "after:absolute after:inset-0 after:rounded-full after:bg-primary/40 after:animate-ping after:scale-110 after:-z-10"
-            )}
-          >
-            {isChatOpen ? (
-              <X className="h-6 w-6 text-white" />
-            ) : (
-              <MessageCircle className="h-6 w-6 text-white" />
-            )}
-          </Button>
+          <iframe 
+            src="https://tawk.to/chat/696a46bbdc605b197c7eb8cd/1jf3i8jk6" 
+            className="flex-1 w-full h-full border-none"
+            title="Tawk.to Chat"
+          />
         </div>
+      )}
+
+      {/* Floating Action Buttons */}
+      <div className="fixed bottom-6 right-6 z-[99999] flex flex-col items-end gap-4">
+        <div className="relative group">
+          <button 
+            onClick={toggleTawk}
+            style={{
+              backgroundColor: '#f09c0b',
+              border: 'none',
+              borderRadius: '50%',
+              width: '48px',
+              height: '48px',
+              cursor: 'pointer',
+              boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              color: 'white'
+            }}
+          >
+            {isChatOpen ? <X className="h-6 w-6" /> : <MessageCircle className="h-6 w-6" />}
+          </button>
+        </div>
+      </div>
+
+      <div className="fixed bottom-6 left-6 z-[9999]">
+        <WhatsAppButton />
       </div>
     </footer>
   );

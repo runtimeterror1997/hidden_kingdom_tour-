@@ -21,7 +21,7 @@ const testimonials = [
     id: 1,
     name: "Sarah Jenkins",
     location: "United Kingdom",
-    text: "Our trip to Bhutan with Hidden Kingdom Tour was absolutely magical. The guide was knowledgeable, and the itinerary was perfect. A life-changing experience!",
+    text: "Our trip to Bhutan with OASIS Tours and Treks was absolutely magical. The guide was knowledgeable, and the itinerary was perfect. A life-changing experience!",
     rating: 5,
   },
   {

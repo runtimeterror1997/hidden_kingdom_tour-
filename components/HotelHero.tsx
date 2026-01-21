@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HotelHero = () => {
   return (
-    <section className="relative h-[40vh] min-h-[400px] flex items-center justify-center overflow-hidden bg-zinc-900 pt-20">
+    <section className="relative h-[65vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-zinc-900 pt-20">
       <div className="absolute inset-0 z-0">
         <Image 
           src="/assets/hotels/hero.png" 

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Star, MapPin, Check, X, Phone, Mail, Globe, Wifi, Flower2, Utensils, Waves } from "lucide-react";
+import Link from "next/link";
 import SectionWrapper from "@/components/SectionWrapper";
 import { hotels, Hotel } from "@/data/hotels";
 import { cn } from "@/lib/utils";
@@ -16,13 +17,15 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 
-const Hotels = () => {
+const Hotels = ({ location }: { location?: string }) => {
   const [activeTab, setActiveTab] = useState<"All" | "Luxury" | "Premium" | "Comfort">("All");
   const [selectedHotel, setSelectedHotel] = useState<Hotel | null>(null);
 
-  const filteredHotels = activeTab === "All" 
-    ? hotels 
-    : hotels.filter(h => h.category === activeTab);
+  const filteredHotels = hotels.filter(h => {
+    const categoryMatch = activeTab === "All" || h.category === activeTab;
+    const locationMatch = !location || (Array.isArray(h.location) ? h.location.includes(location) : h.location === location);
+    return categoryMatch && locationMatch;
+  });
 
   const tabs = ["All", "Luxury", "Premium", "Comfort"];
 
@@ -59,78 +62,84 @@ const Hotels = () => {
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredHotels.map((hotel) => (
-          <div 
-            key={hotel.id} 
-            className="group flex flex-col bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
-          >
-            {/* Image Container */}
-            <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedHotel(hotel)}>
-              <Image 
-                src={hotel.image} 
-                alt={hotel.name} 
-                fill 
-                className="object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <Button variant="secondary" className="rounded-full bg-white/90 text-zinc-900 font-bold text-xs">
-                  VIEW DETAILS
-                </Button>
-              </div>
-              <div className="absolute top-4 right-4">
-                <Badge variant="secondary" className="bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm text-primary font-bold px-3 py-1">
-                  {hotel.category}
-                </Badge>
-              </div>
-              <div className="absolute bottom-4 left-4 flex gap-1">
-                {[...Array(hotel.stars)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400 drop-shadow-md" />
-                ))}
-              </div>
-            </div>
-
-            {/* Content */}
-            <div className="p-6 flex-1 flex flex-col space-y-4">
-              <div className="space-y-1">
-                <div className="flex items-center gap-2 text-primary text-xs font-semibold  tracking-wider">
-                  <MapPin className="w-3 h-3" />
-                  {Array.isArray(hotel.location) ? hotel.location.join(", ") : hotel.location}
+      {filteredHotels.length > 0 ? (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {filteredHotels.map((hotel) => (
+            <div 
+              key={hotel.id} 
+              className="group flex flex-col bg-white dark:bg-zinc-900 rounded-2xl overflow-hidden border border-border shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+            >
+              {/* Image Container */}
+              <div className="relative h-64 overflow-hidden cursor-pointer" onClick={() => setSelectedHotel(hotel)}>
+                <Image 
+                  src={hotel.image} 
+                  alt={hotel.name} 
+                  fill 
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <Button variant="secondary" className="rounded-full bg-white/90 text-zinc-900 font-bold text-xs">
+                    VIEW DETAILS
+                  </Button>
                 </div>
-                <h3 className="text-xl font-serif font-bold group-hover:text-primary transition-colors cursor-pointer" onClick={() => setSelectedHotel(hotel)}>
-                  {hotel.name}
-                </h3>
-              </div>
-              
-              <p className="text-muted-foreground text-sm line-clamp-3 italic">
-                "{hotel.description}"
-              </p>
-
-              {/* Features */}
-              <div className="flex flex-wrap gap-2 pt-2">
-                {hotel.features.slice(0, 3).map((feature) => (
-                  <span key={feature} className="flex items-center gap-1.5 text-[10px] bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1.5 rounded-full border border-zinc-100 dark:border-zinc-700 font-medium">
-                    <Check className="w-2.5 h-2.5 text-primary" />
-                    {feature}
-                  </span>
-                ))}
-                {hotel.features.length > 3 && (
-                  <span className="text-[10px] text-zinc-400 pt-1 font-medium">+{hotel.features.length - 3} more</span>
-                )}
+                <div className="absolute top-4 right-4">
+                  <Badge variant="secondary" className="bg-white/90 dark:bg-zinc-900/90 backdrop-blur-sm text-primary font-bold px-3 py-1">
+                    {hotel.category}
+                  </Badge>
+                </div>
+                <div className="absolute bottom-4 left-4 flex gap-1">
+                  {[...Array(hotel.stars)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400 drop-shadow-md" />
+                  ))}
+                </div>
               </div>
 
-              {/* <div className="pt-4 mt-auto">
-                <Button 
-                  onClick={() => setSelectedHotel(hotel)}
-                  className="w-full py-6 rounded-xl bg-zinc-900 dark:bg-white dark:text-zinc-900 text-white font-bold text-xs tracking-widest hover:bg-primary transition-all duration-300 uppercase shadow-lg shadow-zinc-200 dark:shadow-none"
-                >
-                  Select in Package
-                </Button>
-              </div> */}
+              {/* Content */}
+              <div className="p-6 flex-1 flex flex-col space-y-4">
+                <div className="space-y-1">
+                  <div className="flex items-center gap-2 text-primary text-xs font-semibold  tracking-wider">
+                    <MapPin className="w-3 h-3" />
+                    {Array.isArray(hotel.location) ? hotel.location.join(", ") : hotel.location}
+                  </div>
+                  <h3 className="text-xl font-serif font-bold group-hover:text-primary transition-colors cursor-pointer" onClick={() => setSelectedHotel(hotel)}>
+                    {hotel.name}
+                  </h3>
+                </div>
+                
+                <p className="text-muted-foreground text-sm line-clamp-3 italic">
+                  "{hotel.description}"
+                </p>
+
+                {/* Features */}
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {hotel.features.slice(0, 3).map((feature) => (
+                    <span key={feature} className="flex items-center gap-1.5 text-[10px] bg-zinc-50 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 px-2.5 py-1.5 rounded-full border border-zinc-100 dark:border-zinc-700 font-medium">
+                      <Check className="w-2.5 h-2.5 text-primary" />
+                      {feature}
+                    </span>
+                  ))}
+                  {hotel.features.length > 3 && (
+                    <span className="text-[10px] text-zinc-400 pt-1 font-medium">+{hotel.features.length - 3} more</span>
+                  )}
+                </div>
+              </div>
             </div>
+          ))}
+        </div>
+      ) : (
+        <div className="py-20 text-center space-y-4">
+          <div className="text-zinc-300 dark:text-zinc-700 flex justify-center">
+             <Flower2 className="w-16 h-16 opacity-20" />
           </div>
-        ))}
-      </div>
+          <h3 className="text-2xl font-serif font-bold text-zinc-500">No Hotels Found</h3>
+          <p className="text-muted-foreground max-w-md mx-auto">
+             We currently don't have hotels listed in this category or location. Please contact us for personalized accommodation recommendations in this area.
+          </p>
+          <Button asChild variant="outline" className="mt-4 rounded-full">
+             <Link href="/contact">Enquire Now</Link>
+          </Button>
+        </div>
+      )}
 
       {/* Hotel Detail Modal */}
       <Dialog open={!!selectedHotel} onOpenChange={(open) => !open && setSelectedHotel(null)}>

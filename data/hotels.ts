@@ -13,7 +13,7 @@ export const hotels: Hotel[] = [
     {
         id: "amankora",
         name: "Amankora",
-        location: ["Paro", "Thimphu", "Punakha", "Gangtey", "Bumthang"],
+        location: ["Paro", "Thimphu", "Punakha", "Phobjikha", "Bumthang"],
         category: "Luxury",
         stars: 5,
         description: "A collection of five intimate lodges situated across the central and western valleys of Bhutan, each offering its own unique character and a shared commitment to minimalist luxury and spiritual peace.",
@@ -33,7 +33,7 @@ export const hotels: Hotel[] = [
     {
         id: "six-senses-thimphu",
         name: "Six Senses",
-        location: ["Paro", "Thimphu", "Gangtey"],
+        location: ["Paro", "Thimphu", "Phobjikha"],
         category: "Luxury",
         stars: 5,
         description: "Known as the 'Palace in the Sky', this magnificent lodge is situated on a hillside with sweeping views of the Thimphu Valley and the giant Buddha Dordenma.",

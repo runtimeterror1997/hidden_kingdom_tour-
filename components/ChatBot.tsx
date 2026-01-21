@@ -22,7 +22,7 @@ export function ChatBot({ onClose }: ChatBotProps) {
     {
       id: "1",
       role: "bot",
-      content: "Kuzuzangpo! I am your Hidden Kingdom Guide. How can I help you plan your Bhutanese adventure today?",
+      content: "Kuzuzangpo! I am your OASIS Guide. How can I help you plan your Bhutanese adventure today?",
       timestamp: new Date(),
     },
   ]);
@@ -95,7 +95,7 @@ export function ChatBot({ onClose }: ChatBotProps) {
     }
 
     if (patterns.thanks.test(input)) {
-      return "You're very welcome! It would be our pleasure to help you discover the Hidden Kingdom. \n\nIf you have more questions or are ready to start planning your journey, please reach out to our travel experts:\n- WhatsApp: +975-1755-6636\n- Email: info@hiddenkingdomtour.com\n\nTashi Delek!";
+      return "You're very welcome! It would be our pleasure to help you discover the magic of Bhutan with OASIS. \n\nIf you have more questions or are ready to start planning your journey, please reach out to our travel experts:\n- WhatsApp: +975-1755-6636\n- Email: oasistours.info@gmail.com\n\nTashi Delek!";
     }
 
     // 2. Booking intent (Priority 2)
@@ -108,7 +108,7 @@ export function ChatBot({ onClose }: ChatBotProps) {
 
       const tourType = category ? ` our ${category} Tour` : " a tour";
       
-      return `To book${tourType}, please visit our official website at https://www.hiddenkingdomtour.com/ to select your package. \n\nAlternatively, you may contact our travel experts directly:\n- Phone: +975-1755-6636\n- Email: info@hiddenkingdomtour.com\n\nIs there a specific itinerary or date you are interested in?`;
+      return `To book${tourType}, please visit our official website at https://www.oasistours.com/ to select your package. \n\nAlternatively, you may contact our travel experts directly:\n- Phone: +975-1755-6636\n- Email: oasistours.info@gmail.com\n\nIs there a specific itinerary or date you are interested in?`;
     }
 
     // 3. Category specific info (Priority 3)
@@ -135,10 +135,10 @@ export function ChatBot({ onClose }: ChatBotProps) {
 
     // 5. Greetings & Identity (Priority 5 - Fallback)
     if (patterns.greeting.test(input)) {
-      return "Kuzuzangpo! I am your Hidden Kingdom Guide. It's a pleasure to assist you. How may I help you plan your journey through Bhutan today?";
+      return "Kuzuzangpo! I am your OASIS Guide. It's a pleasure to assist you. How may I help you plan your journey through Bhutan today?";
     }
     if (patterns.identity.test(input)) {
-      return "I am the digital assistant for Hidden Kingdom Tour. My purpose is to provide professional guidance on our tour packages, visa requirements, and travel logistics in Bhutan.";
+      return "I am the digital assistant for OASIS Tours and Treks. My purpose is to provide professional guidance on our tour packages, visa requirements, and travel logistics in Bhutan.";
     }
 
     // Default Fallback
@@ -154,7 +154,7 @@ export function ChatBot({ onClose }: ChatBotProps) {
             <Bot className="w-6 h-6 text-white" />
           </div>
           <div>
-            <h3 className="font-bold text-sm">Hidden Kingdom Guide</h3>
+            <h3 className="font-bold text-sm">OASIS Guide</h3>
             <div className="flex items-center gap-1">
               <span className="w-2 h-2 bg-green-400 rounded-full"></span>
               <span className="text-[10px] text-white/80">Online</span>

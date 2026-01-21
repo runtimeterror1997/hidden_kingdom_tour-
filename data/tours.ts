@@ -24,50 +24,75 @@ export const tours: Tour[] = [
     {
         id: "bhutan-express",
         title: "Bhutan Express Tour",
-        duration: "4 Days / 3 Nights",
+        duration: "8 Days / 7 Nights",
         category: "Cultural",
-        price: "$1,100",
+        price: "$2,100",
         detailImage: "/assets/home/punakha.png",
         image: "/assets/home/tigernest.png",
-        description: "Experience the essence of Bhutan on a short but comprehensive journey through Paro and Thimphu. Visit the iconic Tiger's Nest, ancient dzongs, and witness the unique culture of the Dragon Kingdom. Enjoy local cuisine, cultural immersion, and breathtaking scenery throughout the day.",
+        description: "Experience the ultimate journey through Bhutan's cultural heartland. This expanded 8-day tour takes you beyond the basics, deep into the valleys of Thimphu, Punakha, and the pristine glacial valley of Phobjikha. From ancient fortresses to sacred monasteries and breathtaking Himalayan passes, immerse yourself in the Land of the Thunder Dragon.",
         featured: true,
         highlights: [
-            "Hike to Paro Taktsang (Tiger's Nest)",
-            "Visit Tashichho Dzong in Thimphu",
-            "Explore the National Museum",
-            "Scenic drive to Chele La Pass"
+            "Hike to the legendary Tiger's Nest Monastery",
+            "Explore the majestic Punakha Dzong",
+            "Visit the Black-necked Crane valley in Phobjikha",
+            "Panoramic views from Dochula Pass (108 Chortens)",
+            "Cultural immersion in Thimphu & Paro"
         ],
         inclusions: [
             "All internal ground transport",
             "Certified English-speaking guide",
             "3-star accommodation (double occupancy)",
             "All meals and bottled water",
-            "Visa fees and SDF charges",
-            "Entrance fees to monuments"
+            "SDF (Sustainable Development Fee) & Visa fees",
+            "Entrance fees to all monuments"
         ],
         itinerary: [
             {
                 day: 1,
-                title: "Arrival in Paro - Transfer to Thimphu",
-                description: "Your Bhutanese adventure begins with a spectacular flight into Paro International Airport, one of the world's most challenging yet scenic approaches. As you descend through the Himalayan valleys, catch your first glimpses of terraced rice fields, traditional farmhouses, and the iconic Paro Dzong perched on a hillside. Upon landing, your certified English-speaking guide will warmly welcome you with traditional white scarves (khadars) and escort you to your private vehicle. The scenic 1.5-hour drive to Thimphu winds along the Paro and Thimphu rivers, offering stunning valley views and your first introduction to Bhutanese rural life. After checking into your hotel and freshening up, begin your cultural immersion with a visit to the National Memorial Chorten, built in 1974 in memory of the third King. Watch as elderly Bhutanese circumambulate the stupa, spinning prayer wheels and murmuring mantras—a deeply moving spiritual experience. As the sun begins to set, visit the magnificent Tashichho Dzong, the seat of Bhutan's government and monastic body. This fortress-monastery showcases stunning traditional architecture with its whitewashed walls, golden roofs, and intricate woodwork. If visiting during summer, you may witness monks in their maroon robes gathering for evening prayers. Return to your hotel for a welcome dinner featuring traditional Bhutanese cuisine including ema datshi (chili cheese) and red rice.",
+                title: "Arrival in Paro & Journey to the Capital",
+                description: "Your transformative journey begins with a flight into Paro International Airport, widely considered one of the most spectacular aerial approaches in the world. As the aircraft weaves through the towering peaks of the Himalayas, catch your first glimpse of the pristine landscape, terraced hillsides, and the emerald-green Paro valley. Upon landing, the crisp, clean mountain air immediately signals your arrival in the Last Shangri-La. After meeting your personal guide and driver, we embark on a scenic 1.5-hour drive to Thimphu, the kingdom's vibrant capital city. This journey winds along the confluence of the Pa Chhu and Wang Chhu rivers, passing through traditional Bhutanese villages where life moves at a serene pace. Along the way, we'll stop to admire the Chuzom, the meeting point of the two rivers, adorned with three distinct styles of chortens—Bhutanese, Tibetan, and Nepalese. Upon reaching Thimphu (2,334m), check into your hotel and enjoy a brief rest. In the late afternoon, we visit the National Memorial Chorten, a prominent landmark built in memory of the third King, Jigme Dorji Wangchuck. Here, you'll witness the heart of Thimphu's spiritual life as elderly locals circumambulate the stupa in a rhythmic, meditative flow, their prayers wheels spinning in constant devotion. We conclude the day with a visit to the Buddha Dordenma (Buddha Point), where one of the world's largest bronze Buddha statues gazes over the valley. As evening falls, the golden monument radiates a peaceful energy, offering panoramic views of the city lights below. Your first evening in Bhutan concludes with a welcome dinner featuring local delicacies, introducing you to the unique flavors that define this extraordinary culture.",
                 overnight: "Thimphu"
             },
             {
                 day: 2,
-                title: "Thimphu Sightseeing - Paro",
-                description: "After a hearty breakfast, begin your full day of Thimphu exploration. Start with a visit to the colossal Buddha Dordenma statue, a 169-foot bronze and gold-gilded monument that overlooks the entire Thimphu valley. The statue houses over 100,000 smaller Buddha statues, creating a powerful spiritual atmosphere. The panoramic views from this vantage point are breathtaking, offering photo opportunities of the capital city nestled in the valley below. Next, immerse yourself in Bhutanese rural heritage at the Folk Heritage Museum, a restored three-story traditional farmhouse that provides fascinating insights into the traditional Bhutanese way of life. Explore authentic artifacts, traditional tools, and household items while learning about age-old customs and practices. Continue to the National Textile Museum, where you'll discover Bhutan's rich weaving traditions. Marvel at intricate kiras (women's dresses) and ghos (men's robes), some taking months to complete by hand. Your guide will explain the significance of patterns and colors in Bhutanese textiles. After lunch at a local restaurant, begin your scenic drive back to Paro. Upon arrival, visit the National Museum housed in the ancient Ta Dzong watchtower. This circular building contains an impressive collection of Bhutanese art, relics, religious thangka paintings, and natural history exhibits. The museum offers deep insights into Bhutan's cultural evolution and Buddhist heritage. Spend the evening strolling through Paro town, browsing local handicraft shops and soaking in the peaceful atmosphere of this charming valley town.",
-                overnight: "Paro"
+                title: "Thimphu: Cultural Immersion in the Heart of the Dragon",
+                description: "Today is dedicated to exploring the rich tapestry of Thimphu's cultural and artistic heritage. We begin at the Institute for Zorig Chusum, commonly known as the Painting School, where students undergo years of rigorous training in Bhutan's thirteen traditional arts and crafts. Watching young artisans master woodcarving, embroidery, and thangka painting offers a deep appreciation for the kingdom's commitment to preserving its ancestral skills. Following this, we visit the National Textile Museum, a treasure trove of intricate weaves and royal robes that showcase the complexity and symbolism of Bhutanese textiles. Each pattern tells a story of identity, status, and spirituality. For a lighter touch, we visit the Motithang Takin Preserve to see the Takin, Bhutan's unique national animal that resembles a mix between a cow and a goat—a creature steeped in local mythology and the legends of the 'Divine Madman'. After lunch, we explore the Folk Heritage Museum, a restored 19th-century farmhouse that provides a fascinating glimpse into the traditional rural lifestyle, complete with authentic artifacts and household tools. The highlight of the late afternoon is the majestic Tashichho Dzong, 'The Fortress of the Glorious Religion'. This grand structure serves as the administrative center and the summer residence of the Je Khenpo (Chief Abbot). As we walk through its whitewashed courtyards and admire the intricate woodwork, you'll feel the harmonious blend of secular and sacred power that defines Bhutanese governance. The evening is yours to explore the streets of Thimphu, perhaps visiting local craft bazaars or a cozy cafe to soak in the atmosphere of the world's only capital without traffic lights.",
+                overnight: "Thimphu"
             },
             {
                 day: 3,
-                title: "Tiger's Nest Hike",
-                description: "Today brings the highlight of your Bhutan journey—the legendary hike to Taktsang Goemba, the Tiger's Nest Monastery. Start early after a nutritious breakfast, as this sacred pilgrimage site sits dramatically on a cliff face 900 meters above the Paro valley. The monastery was built in 1692 around the cave where Guru Rinpoche (Padmasambhava) is said to have meditated for three months in the 8th century, arriving on the back of a flying tigress. The hike begins through beautiful pine forests adorned with Spanish moss and colorful prayer flags fluttering in the mountain breeze. The trail gradually ascends, offering increasingly spectacular views of the monastery clinging impossibly to the granite cliff. After about 1.5-2 hours of hiking, reach the cafeteria viewpoint where you can rest, enjoy refreshments, and capture stunning photographs of the monastery across the gorge. For those who wish to continue, the final ascent involves steep stairs and narrow passages, but the reward is immense. Inside the monastery complex, explore various temples and meditation caves, each with its own spiritual significance. The main temple houses statues of Guru Rinpoche in his eight manifestations. The spiritual energy and architectural marvel of this sacred site, combined with the dramatic setting, create an unforgettable experience. Descend back to the base by late afternoon (the entire hike takes 5-6 hours round trip). Return to your hotel to freshen up before enjoying a special farewell dinner featuring traditional Bhutanese dishes and cultural performances. Reflect on your incredible journey through the Land of the Thunder Dragon.",
-                overnight: "Paro"
+                title: "Over the Clouds: Thimphu to Punakha via Dochula",
+                description: "Leaving the capital behind, we ascend towards the Dochula Pass (3,100m). This mountain crossing is one of the most beautiful in Bhutan, marked by 108 memorial chortens built by the Queen Mother. On a clear day, the pass offers a breathtaking, unobstructed 360-degree panorama of the snow-capped Himalayan peaks, including Masanggang, Tsendagang, and Gangkhar Puensum, the highest unclimbed mountain in the world. The sight of the fluttering prayer flags against the backdrop of the giants of the north is a profoundly spiritual moment. After spending time at the pass, we descend through lush forests of rhododendron, fir, and hemlock into the subtropical Punakha Valley. The change in vegetation and temperature is remarkable as we drop nearly 1,500 meters. Before reaching our destination, we take a leisurely walk through terraced rice fields to Chimi Lhakhang, the 'Fertility Temple'. This sacred site is dedicated to Lama Drukpa Kunley, the 15th-century saint known for his unorthodox teaching methods and playful spirit. The temple is a focal point for couples seeking blessings, and the surrounding village is famous for its unique phallic art. After lunch, we enter the majestic Punakha Dzong, often described as the most beautiful fortress in the kingdom. Built at the confluence of the Pho Chhu (Father) and Mo Chhu (Mother) rivers, the Dzong resembles a giant ship anchored in the water. It was here that the first King of Bhutan was crowned, and it remains a site of immense historical and religious importance. In the evening, relax by the riverside and enjoy the tranquility of this warmer, fertile valley, reflecting on the day's journey from the high mountain passes to the river's edge.",
+                overnight: "Punakha"
             },
             {
                 day: 4,
-                title: "Departure",
-                description: "Your final morning in Bhutan begins with a leisurely breakfast at your hotel, allowing time for last-minute packing and souvenir shopping if desired. Your guide will ensure you have all necessary documents and assist with airport check-in procedures. The drive to Paro International Airport offers one last opportunity to soak in the stunning Himalayan scenery and reflect on your transformative journey. Bid farewell to your guide and the magical Kingdom of Bhutan as you board your flight. As the aircraft climbs through the mountain valleys, enjoy breathtaking aerial views of the snow-capped peaks, terraced fields, and dzongs you've come to know. Depart with memories of ancient monasteries, warm smiles, vibrant culture, and the serene beauty of the last great Himalayan kingdom. Tashi Delek!",
+                title: "Into the Glacial Valley: Punakha to Phobjikha",
+                description: "Today's journey takes us further east, climbing once again towards the Lawala Pass. As we leave the balmy valley of Punakha, the landscape transforms into rugged mountain terrain before opening up into the wide, breathtaking Phobjikha Valley. This u-shaped glacial valley is a stunning contrast to the narrow, deep valleys seen so far. Phobjikha is part of a large conservation area and serves as the winter home for the rare and endangered Black-necked Cranes, which migrate here from the Tibetan plateau every November. The sight of these majestic birds (in season) dancing in the marshlands is a highlight of Bhutan's natural wonders. We start our exploration at the high-altitude Gangtey Goempa, a 17th-century monastery perched on a hill overlooking the entire valley. As the only Nyingma monastery in western Bhutan, it holds a unique spiritual position. The intricate paintings and the serene atmosphere within the temple walls provide a perfect setting for quiet reflection. After visiting the monastery, we embark on the Gangtey Nature Trail, a gentle 1.5-hour hike that winds through pine forests, past traditional farmhouses, and across the valley floor. This walk offers an intimate look at the local way of life and the pristine environment that makes Phobjikha so special. We'll also visit the Black-necked Crane Information Centre to learn more about the ecology of the valley and the conservation efforts to protect these sacred 'heavenly birds'. The evening in Phobjikha is quiet and magical; with no overhead power lines (to protect the cranes), the starlit sky is extraordinarily clear. Enjoy the warmth of a traditional bukhari (wood-burning stove) as you settle into your farmhouse or lodge for the night.",
+                overnight: "Phobjikha"
+            },
+            {
+                day: 5,
+                title: "Quiet Mornings and the Return to the Warm Valley",
+                description: "We begin our morning in Phobjikha with the sound of distant temple bells and the crisp mountain air. After breakfast, you might choose to take another short walk to observe the morning rituals of the local farmers or simply soak in the silent majesty of the glacial landscape. The valley's marshlands, covered in frost in the early hours, offer a painterly scene of light and shadow. Before we depart, we visit a local farmhouse to experience authentic Bhutanese hospitality. Here, you can learn about the daily routines of a rural family, perhaps trying your hand at churning butter tea or tasting locally grown potatoes, for which this region is famous. In the late morning, we begin our return journey towards Punakha. The drive back over the Lawala Pass offers a different perspective on the mountain ridges and the deep gorges of central Bhutan. Upon arriving back in the Punakha valley, we visit the Khamsum Yulley Namgyal Chorten. To reach this magnificent stupa, we take a 45-minute hike through emerald-green rice paddies and up a gentle slope. Built by the Queen Mother for the protection of the kingdom and the well-being of all sentient beings, the Chorten is an architectural masterpiece of modern Bhutanese design. The view from the top, looking down the valley with the river winding through the fields, is arguably the best in the region. The rest of the afternoon is yours to relax. You might choose to cross the Punakha Suspension Bridge, one of the longest and oldest in the country, draped in colorful prayer flags and offering a bit of an adrenaline rush as it sways over the rushing Pho Chhu river. Dinner is served overlooking the valley, celebrating another day of discovery in the heart of the kingdom.",
+                overnight: "Punakha"
+            },
+            {
+                day: 6,
+                title: "Journey Back to the Sacred Valley of Paro",
+                description: "After breakfast, we bid farewell to the beautiful Punakha valley and begin our drive back towards Paro. This journey gives us a final chance to cross the Dochula Pass, where we might stop for a tea break and one last look at the Himalayan range. Descending back into the Paro valley (2,200m), you'll notice the change back to the cooler, dryer air of Western Bhutan. Paro is a valley of immense sacred significance, home to many of Bhutan's oldest temples and monasteries. Upon arrival, we visit the Rinpung Dzong, the 'Fortress on a Heap of Jewels'. This massive structure, built by the unifier of Bhutan, Zhabdrung Ngawang Namgyal, is a classic example of Bhutanese architecture and serves as both a monastery and the administrative hub of the district. A scenes from the film 'Little Buddha' were shot here, and the walk across the traditional wooden cantilever bridge, Nyamai Zam, below the Dzong is a perfect photo opportunity. Adjacent to the Dzong, we explore the National Museum, housed in a traditional watchtower known as Ta Dzong. The museum's collections include ancient armor, biological exhibits, and an extraordinary gallery of thangkas and stamps. This visit provides a comprehensive overview of the history and natural environment you've seen during your trip. In the evening, we stroll through the charming streets of Paro town. The main street is lined with beautifully painted shopfronts, offering everything from local handicrafts and antiques to handmade paper and textiles. It's a wonderful place to pick up souvenirs and soak in the local vibe before your final full day in the kingdom.",
+                overnight: "Paro"
+            },
+            {
+                day: 7,
+                title: "The Ultimate Pilgrimage: Hike to the Tiger's Nest",
+                description: "No visit to Bhutan is complete without the iconic hike to Taktsang Goemba, the legendary Tiger's Nest Monastery. Perched precariously on a sheer granite cliff 900 meters above the valley floor, it is one of the most venerated sites in the Buddhist world. Legend has it that Guru Rinpoche, the second Buddha, flew here on the back of a tigress to meditate in the caves and subdue local demons. We start early to avoid the midday sun, beginning our ascent through beautiful forests of pine and oak, draped with Spanish moss. The trail is well-maintained and as you climb, you'll be encouraged by the sight of the monastery appearing and disappearing through the trees. After about 1.5 to 2 hours, we reach a cafeteria that offers the first stunning close-up view of the monastery across the gorge—a perfect spot for a rest and some photographs. For those who wish to continue, the final climb involves a series of steep stone steps that lead down to a waterfall and then back up to the entrance of the Tiger's Nest. Once inside, the atmosphere is electric with spiritual energy. You'll visit various temples and caves where Guru Rinpoche and other great masters meditated. The view looking back down into the Paro valley is awe-inspiring. The descent takes about 2 hours, and back at the base, you'll feel a profound sense of achievement. To celebrate your final night, we arrange a traditional hot stone bath (optional), where river stones are heated in a fire and added to a wooden tub filled with medicinal herbs—the perfect way to soothe tired muscles. We conclude with a special farewell dinner, sharing stories and reflections on your 8-day odyssey through the Land of the Thunder Dragon.",
+                overnight: "Paro"
+            },
+            {
+                day: 8,
+                title: "Farewell to the Last Shangri-La",
+                description: "On your final morning in the Kingdom mentioned in ancient texts as 'The Southern Land of Medicinal Herbs', enjoy a final breakfast at your hotel. Depending on your flight schedule, there might be time for one last stroll through Paro town or a quick visit to Kyichu Lhakhang, one of the oldest and most sacred temples in Bhutan, built in the 7th century by the Tibetan King Songtsen Gampo. It is a peaceful place to offer a final prayer and say goodbye to the spiritual heart of the country. Your guide and driver will then escort you to Paro International Airport. As you check in and prepare for departure, you'll find that while you are leaving the physical landscape of Bhutan, the kingdom's unique philosophy of Gross National Happiness and the serenity of the Himalayas stay with you. The flight out offers one last spectacular look at the peaks of the high Himalayas, including Mount Everest and Kanchenjunga on a clear day. Watching the valleys fade into the distance, you'll carry with you memories of ancient fortresses, vibrant festivals, untouched nature, and the warm smiles of the Bhutanese people. We bid you Tashi Delek (Good Luck and Prosperity) and hope that the peace of the Dragon Kingdom follows you on your onward journey and throughout your life. Until we meet again!",
                 overnight: "Departure"
             }
         ]
@@ -601,94 +626,236 @@ export const tours: Tour[] = [
             { day: 8, title: "Departure", description: "Transfer to Paro terminal. The Six Senses team bids you farewell as you board your flight, leaving with a renewed sense of well-being and happiness.", overnight: "Departure" }
         ]
     },
+
     {
         id: "le-meridien-escape",
         title: "Le Meridien Escape",
-        duration: "5 Days / 4 Nights",
+        duration: "8 Days / 7 Nights",
         category: "Luxury",
-        price: "$2,800",
+        price: "$4,500",
         image: "/assets/luxury/lee.png",
         detailImage: "/assets/luxury/lee1.png",
-        description: "Chic modern comfort in the heart of the Himalayas. Stay at Le Meridien Thimphu and Le Meridien Paro Riverfront. Enjoy local cuisine, cultural immersion, and breathtaking scenery throughout the day.",
+        description: "Experience chic modern comfort in the heart of the Himalayas with this expanded 8-day journey. Split your stay between the sophisticated Le Méridien Thimphu and the serene Le Méridien Paro Riverfront. This itinerary blends contemporary luxury with deep cultural immersion, featuring exclusive excursions to Haa Valley, private museum visits, and gourmet culinary experiences.",
         featured: true,
         highlights: [
-            "Le Meridien Thimphu & Paro",
-            "Riverfront Views",
-            "Explore Local Markets",
-            "Cultural Performances"
+            "Stay at Le Méridien Thimphu & Paro",
+            "Day excursion to the remote Haa Valley",
+            "Riverfront dining at Paro",
+            "Private cultural performances",
+            "Explore hidden city gems in Thimphu",
+            "Relaxing spa treatments at Explore Spa"
         ],
         inclusions: [
-            "5-star Accommodation",
-            "Buffet Breakfast & Dinner",
-            "Private Transport",
-            "Museum Fees"
+            "Luxury accommodation at Le Méridien",
+            "Daily buffet breakfast & dinner",
+            "Private SUV transportation",
+            "English-speaking licensed guide",
+            "All museum and permit fees",
+            "One complimentary spa treatment"
         ],
         itinerary: [
-            { day: 1, title: "Arrival Paro - Thimphu", description: "Arrive at Paro Airport and transfer to Thimphu (1 hour). Check into Le Méridien Thimphu, located in the heart of the city. The hotel blends modern chic with Bhutanese aesthetics. Relax in your room or take a swim in the indoor heated pool. In the evening, enjoy a welcome dinner at 'Latest Recipe,' the hotel's signature restaurant offering global flavors.", overnight: "Thimphu" },
-            { day: 2, title: "Thimphu Culture", description: "Explore Thimphu's key sights comfortably. Visit the National Memorial Chorten and the Folk Heritage Museum. Stop by the Takin Preserve to see the national animal. In the afternoon, enjoy some leisure time shopping at the Centenary Farmers Market (if weekend) or local handicraft shops. Overnight at Le Méridien Thimphu.", overnight: "Thimphu" },
-            { day: 3, title: "Thimphu to Paro", description: "After breakfast, enjoy a scenic drive back to Paro. Check into Le Méridien Paro, Riverfront. As the name suggests, it sits on the banks of the Paro River, offering stunning views of the Eastern Himalayas. Enjoy a 'Sparkling' afternoon tea by the river or relax at the Explore Spa. The location is tranquil and perfect for unwinding.", overnight: "Paro" },
-            { day: 4, title: "Tiger's Nest & City", description: "Early morning hike to the famous Tiger's Nest Monastery. Return to the hotel to refresh. In the late afternoon, head into Paro town to explore the quirky cafes and souvenir shops. Dinner at 'Bamboo Chic,' the hotel's Pan-Asian restaurant, for a delicious culinary experience.", overnight: "Paro" },
-            { day: 5, title: "Departure", description: "Enjoy a leisurely breakfast before your transfer to Paro International Airport. The hotel's proximity to the airport ensures a stress-free departure.", overnight: "Departure" }
+            {
+                day: 1,
+                title: "Arrival Paro - Transfer to Thimphu",
+                description: "Your Himalayan escape begins as you land at Paro International Airport, navigating one of the world's most dramatic approaches. Upon clearing immigration, you will be warmly welcomed by your private guide and chauffeur. Enjoy a comfortable 1-hour drive to Thimphu, the bustling capital city, passing the confluence of the Pa Chhu and Wang Chhu rivers. Arrive at Le Méridien Thimphu, located in the heart of the city near the main shopping district. This chic 5-star property blends Bhutanese architecture with modern design. After a smooth check-in, take some time to refresh in your spacious room or enjoy a swim in the indoor heated pool. In the evening, step out to explore the nearby craft bazaar where local artisans display their wares. Dinner is served at 'Latest Recipe,' the hotel's signature restaurant, offering a global buffet with a Bhutanese twist. Wrap up your first day with a cocktail at the latitude bar, acclimatizing to the mountain air.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 2,
+                title: "Thimphu: Culture & Heritage",
+                description: "After a lavish breakfast, embark on a full day of cultural discovery in Thimphu. Start at the National Memorial Chorten, a daily place of worship for locals. Join the elderly devotees as they circumambulate the stupa, spinning prayer wheels and chanting mantras. Next, visit the massive Buddha Dordenma statue at Kuensel Phodrang. Standing at 51.5 meters, it offers panoramic views of the entire valley. Proceed to the Folk Heritage Museum, a restored traditional house that offers a glimpse into rural Bhutanese life from a century ago. For lunch, try an authentic Bhutanese set menu at a local heritage restaurant. In the afternoon, visit the sanctuary of the Takin, Bhutan's national animal, nestled in the pine forests of Motithang. End the day with a visit to the Tashichho Dzong, the seat of government, witnessing the traditional flag-lowering ceremony at sunset. Return to Le Méridien for a relaxing evening.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 3,
+                title: "Thimphu: Arts, Crafts & panoramic Hikes",
+                description: "Dive deeper into Bhutan's artistic traditions today. Visit the Institute for Zorig Chusum, where students learn the 13 traditional arts and crafts of Bhutan. Watch them master painting, woodcarving, and embroidery. Then, head to the National Textile Museum to appreciate the intricate royal garments and weaving techniques. In the afternoon, drive north to the base of the Cheri Monastery. A scenic 45-minute hike through a forest filled with prayer flags leads you to this significant meditation center founded in 1620. It's a serene spot often frequented by mountain goats. Alternatively, you can opt for a lighter walk at the Royal Botanical Garden if you prefer. Return to Thimphu for some leisure time. You might want to indulge in a treatment at the hotel's Explore Spa or browse the boutique shops in the city center for high-quality cashmere and jewelry. Dinner at the hotel or a recommended restaurant in town.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 4,
+                title: "Thimphu to Paro: Scenic Drive & Riverfront Luxury",
+                description: "Bid farewell to the capital and enjoy a scenic drive back towards Paro. Along the way, stop at the Tachog Lhakhang Bridge, an iron chain bridge built in the 15th century. It’s a perfect photo opportunity. Proceed to Paro and check into Le Méridien Paro, Riverfront. This stunning property sits right on the banks of the Paro River, offering breathtaking views of the Eastern Himalayas. The architecture is a modern interpretation of a Bhutanese Dzong. After settling in, enjoy a 'Sparkling' afternoon tea on the terrace overlooking the river. In the afternoon, visit the Rinpung Dzong (Fortress on a Heap of Jewels), famous for its beautiful wooden galleries and the scene of the 'Little Buddha' film. Walk down to the traditional wooden cantilever bridge. Return to the hotel to enjoy the sunset by the river warmth of the outdoor fire pits.",
+                overnight: "Paro"
+            },
+            {
+                day: 5,
+                title: "Excursion to Haa Valley & Chele La Pass",
+                description: "Prepare for a spectacular day trip to the Haa Valley. Drive up to the Chele La Pass, which at 3,988 meters is the highest motorable road in Bhutan. On a clear day, the views of Mt. Jomolhari and Jichu Drake are magnificent. Thousands of prayer flags flutter in the wind here, sending blessings across the land. Descend into the Haa Valley, a region only opened to tourism in 2002. It is known for its ancestral traditions and shamanistic rituals. Visit Lhakhang Karpo (White Temple) and Lhakhang Nagpo (Black Temple), nestled at the foothills of the three brother mountains. Enjoy a picnic lunch in the pristine alpine setting. This valley offers a quieter, more rustic experience compared to Paro and Thimphu. Drive back to Paro in the late afternoon, arriving in time for a relaxing soak in the hotel's pool or a massage at the spa.",
+                overnight: "Paro"
+            },
+            {
+                day: 6,
+                title: "Paro Valley: Museums & Local Life",
+                description: "Start your day with a visit to the National Museum of Bhutan, housed in the ancient Ta Dzong watchtower. The museum holds a fascinating collection of thangkas, festival masks, stamps, and natural history exhibits. It provides a comprehensive overview of Bhutanese culture. Afterward, visit the 7th-century Kyichu Lhakhang, one of the oldest and most sacred temples in the country. The temple complex is a haven of peace, with orange trees and elderly pilgrims spinning prayer wheels. For lunch, explore Paro town and try a local eatery. In the afternoon, you have the option to try your hand at archery, Bhutan's national sport, or visit a traditional farmhouse to see how locals live. You can even enjoy a traditional hot stone bath at the farmhouse (at an additional cost) for an authentic wellness experience. Return to Le Méridien Paro for a themed dinner at 'Bamboo Chic,' their Pan-Asian restaurant.",
+                overnight: "Paro"
+            },
+            {
+                day: 7,
+                title: "The Ultimate Hike: Tiger's Nest Monastery",
+                description: "Today is the highlight of your trip: the hike to Taktsang Goemba, widely known as the Tiger's Nest. Start early to beat the heat and crowds. The monastery clings to a cliff 900 meters above the valley floor. The hike takes about 2 to 3 hours uphill through beautiful pine forests. Legend says Guru Rinpoche flew here on a tigress to meditate. Halfway up, take a break at the cafeteria for tea and a stunning view of the monastery. Upon reaching the top, explore the sacred temples and caves. The spiritual energy and the views are unparalleled. After descending, your driver will take you back to the hotel to rest your weary legs. Treat yourself to a final spa treatment or simply relax by the river. For your farewell dinner, enjoy a special setup by the riverfront (weather permitting) or a private dining experience to celebrate the end of a memorable journey through the Kingdom of Happiness.",
+                overnight: "Paro"
+            },
+            {
+                day: 8,
+                title: "Departure",
+                description: "Enjoy a leisurely breakfast at the hotel, taking in the final views of the river and mountains. Depending on your flight time, you might have a few moments for last-minute souvenir shopping in Paro town. Your guide and driver will transfer you to Paro International Airport. As you board your flight, look back at the majestic peaks and carry with you the memories of the warm hospitality and the peaceful landscapes of Bhutan. Tashi Delek!",
+                overnight: "Departure"
+            }
         ]
     },
     {
         id: "pemako-thimphu",
-        title: "Pemako Thimphu Experience",
-        duration: "5 Days / 4 Nights",
+        title: "Pemako Experience",
+        duration: "8 Days / 7 Nights",
         category: "Luxury",
-        price: "$3,200",
+        price: "$5,200",
         image: "/assets/luxury/pemako1.png",
         detailImage: "/assets/luxury/pemako.png",
-        description: "Experience the heart of Thimphu at the Pemako, a sanctuary of design and comfort. Enjoy curated cultural tours and exquisite dining. Enjoy local cuisine, cultural immersion, and breathtaking scenery throughout the day.",
+        description: "Immerse yourself in Bhutanese elegance with this 8-day luxury journey centered around the magnificent Pemako Thimphu. Known for its fusion of traditional dzong architecture and contemporary comfort, Pemako serves as your sanctuary while you explore the western valleys. This expanded itinerary includes an immersive stay in Thimphu, a cultural deep-dive in Punakha, and a spiritual finale in Paro, all while enjoying world-class hospitality, curated artistic experiences, and rejuvenating wellness therapies.",
         featured: true,
         highlights: [
-            "Stay at Pemako Thimphu",
-            "Private Thimphu City Tour",
-            "Fine Dining Experiences",
-            "Wellness & Spa",
+            "Stay at the iconic Pemako Thimphu",
+            "Private audience with a monk or historian",
+            "Luxury camping or resort stay in Punakha",
+            "Exclusive art and textile workshops",
+            "Helicopter sightseeing option (add-on)",
+            "Seven-course tasting menus"
         ],
         inclusions: [
-            "Luxury Suite at Pemako",
-            "Private Guide & Chauffeur",
-            "All Meals & Beverages",
-            "Spa Credit"
+            "Luxury Suite at Pemako Thimphu & Partner Hotels",
+            "Private Guide & Luxury Chauffeur Service",
+            "All Gourmet Meals & Non-alcoholic Beverages",
+            "Spa Credit & Welcome Amenities",
+            "All Entry Fees & Permits",
+            "Daily Housekeeping & Turndown Service"
         ],
         itinerary: [
-            { day: 1, title: "Arrival & Welcome", description: "Arrive at Paro International Airport where your private chauffeur and guide await. Enjoy a comfortable 1-hour drive to Thimphu, checking into the Pemako Thimphu. This luxury hotel is a architectural marvel, blending traditional dzong-like structures with modern elegance. Upon arrival, you are welcomed with the sounds of traditional music and a refreshing drink. Spend the afternoon relaxing in your spacious suite or exploring the hotel's manicured gardens. In the evening, enjoy a curated multi-course welcome dinner highlighting organic ingredients from the Himalayas.", overnight: "Thimphu" },
-            { day: 2, title: "Thimphu Immersion", description: "Immerse yourself in Bhutan's living culture. Visit the National Textile Museum to see the intricate art of weaving, followed by the Institute for Zorig Chusum (Painting School) to watch students master the 13 traditional arts. Enjoy a private lunch at a heritage restaurant. In the afternoon, return to Pemako for a 'Tea and Talk' session with a local historian or monk who will share insights into Buddhism and Gross National Happiness. Evening at leisure to enjoy the hotel's world-class facilities.", overnight: "Thimphu" },
-            { day: 3, title: "Scenic Excursion", description: "Drive up to the Dochula Pass (3,100m) for breathing views of the snow-capped Himalayas. Visit the Druk Wangyal Lhakhang temple nearby. Then, descend slightly to the Lamperi Botanical Park for a guided 'forest bathing' walk through ancient rhododendron forests. It is a sensory experience designed to reconnect you with nature. Enjoy a luxury picnic lunch in the park before returning to Thimphu. In the evening, explore the local craft bazaar for high-quality souvenirs.", overnight: "Thimphu" },
-            { day: 4, title: "Cultural Deep Dive", description: "Drive to the northern end of the Thimphu valley to hike to Cheri Monastery (Chagri Dorjeden), established in 1620 by Zhabdrung Ngawang Namgyal. It is a major meditation center for monks. The hike takes about 45 minutes uphill through a forest filled with prayer flags and possibly wild mountain goats. Return to Thimphu for a relaxing afternoon. Participate in a private painting or weaving workshop at the hotel, or simply indulge in a signature treatment at The Lotus Spa.", overnight: "Thimphu" },
-            { day: 5, title: "Departure", description: "Enjoy a leisurely breakfast before your private transfer to Paro International Airport. Your guide will ensure all formalities are handled smoothly as you bid farewell to the Kingdom of Bhutan.", overnight: "Departure" }
+            {
+                day: 1,
+                title: "Arrival & Welcome to the 'Hidden Capital'",
+                description: "Touch down at Paro International Airport where the cool Himalayan breeze welcomes you. Your private chauffeur will be waiting on the tarmac (VIP service dependent) or at the arrival gate to whisk you away in a luxury SUV. Enjoy a scenic 1-hour drive following the river valley to Thimphu. As you enter the city, the imposing architecture of Pemako Thimphu rises to greet you. This architectural marvel looks like a fortress but feels like a palace. Upon arrival, receive a grand traditional welcome with horns and cymbals, followed by a refreshing welcome drink in the stunning atrium. Check into your luxury suite, featuring hand-painted murals and views of the city skyline. Spend the afternoon acclimatizing in comfort. You might choose to explore the hotel's beautifully manicured gardens or relax in the heated indoor pool. In the evening, enjoy a curated multi-course welcome dinner at the hotel's signature restaurant, highlighting organic ingredients sourced from the Himalayas, paired with fine wines.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 2,
+                title: "Thimphu: Arts, Astrology & Spirituality",
+                description: "After a leisurely breakfast, immerse yourself in Bhutan's living culture. Start with a visit to the National Textile Museum to witness the intricate art of weaving—a skill highly revered in Bhutanese society. Continue to the Institute for Zorig Chusum (Painting School) to watch students master the 13 traditional arts, from clay sculpting to wood carving. Your guide can arrange a private interaction with a master instructor. For lunch, enjoy a private dining experience at a heritage restaurant in town. In the afternoon, return to Pemako for a unique 'Tea and Talk' session. We invite a local historian or a senior monk to join you for high tea, sharing insights into Buddhism, the concept of Gross National Happiness, and the changing face of Bhutan. This intimate conversation offers a depth of understanding that goes beyond standard sightseeing. Spend the evening at leisure, perhaps trying a signature treatment at The Lotus Spa, renowned for its holistic therapies.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 3,
+                title: "Thimphu: Nature & The Divine Madman's Trail",
+                description: "Wake up early for a revitalizing drive to the northern end of the Thimphu valley. Hike to Cheri Monastery (Chagri Dorjeden), established in 1620 by Zhabdrung Ngawang Namgyal, the unifier of Bhutan. The trail crosses a traditional cantilever bridge and climbs steeply through a forest of oak and rhododendron, often filled with playing langur monkeys and mountain goats. The monastery is a major meditation center for retreat monks. Feel the profound silence and spiritual energy of this sacred space. After descending, enjoy a luxury riverside picnic lunch prepared by the hotel chefs. On your way back, stop at the Pangri Zampa School of Astrology to have your fortune read by a monk (optional). In the evening, verify out the local craft bazaar for high-quality souvenirs such as hand-woven textiles, thangkas, and brass statues. Dinner is at your leisure, with recommendations for the best local spots provided by your concierge.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 4,
+                title: "Journey to Punakha: The Alpine Pass",
+                description: "Depart Thimphu for the warmer, subtropical valley of Punakha. The drive takes you up to the Dochula Pass (3,100m). On a clear day, the 360-degree panoramic view of the snow-capped Eastern Himalayas is breathtaking. Visit the 108 Druk Wangyal Chortens, built to honor the fourth King. Descend through changing vegetation zones—from alpine pine forests to cactus and banana plants—into the lush Punakha valley. Check into your luxury accommodation in Punakha (Partner Hotel similar to Pemako standards). After refreshing, take a pleasant walk through the rice paddies to Chimi Lhakhang, the 'Temple of Fertility' dedicated to the Divine Madman (Lama Drukpa Kunley). The walk takes you through the charming village of Sopsokha, known for its phallus paintings. The temple is a pilgrimage site for childless couples. In the evening, relax by the riverside or enjoy a campfire dinner under the stars.",
+                overnight: "Punakha"
+            },
+            {
+                day: 5,
+                title: "Punakha: Fortress of Great Happiness",
+                description: "Begin your day with the sounds of the river. Visit the magnificent Punakha Dzong, the 'Palace of Great Happiness.' Built in 1637 at the confluence of the Pho Chhu and Mo Chhu rivers, it is considered the most beautiful dzong in Bhutan. It serves as the winter residence of the central monastic body. Explore the intricate courtyards and the Kuenrey (assembly hall) with its massive statues. Afterward, walk across the longest suspension bridge in Bhutan, adorned with prayer flags, for a bit of adventure and stunning views. For lunch, enjoy a farmhouse experience where you can taste local delicacies like 'Ema Datshi' (chili cheese) geared to your spice tolerance. In the afternoon, hike to the Khamsum Yulley Namgyal Chorten, a spectacular temple on a ridge overlooking the valley. The view from the top is one of the best in the country. Return to your hotel for a relaxing evening.",
+                overnight: "Punakha"
+            },
+            {
+                day: 6,
+                title: "Punakha to Paro: The Return Journey",
+                description: "Drive back west to Paro, crossing the Dochula Pass once more. This second crossing gives you another chance to spot the high peaks if the weather was cloudy before. Stop at the Royal Botanical Park at Lamperi for a short nature walk if interested. Proceed to Paro and check into your luxury hotel (Partner Luxury Hotel). Paro valley is home to many of Bhutan's oldest temples and monasteries. In the afternoon, visit the 7th-century Kyichu Lhakhang, one of the 108 temples built by the Tibetan King Songtsen Gampo. It is a place of deep peace and history. You might also visit the Dungtse Lhakhang, a unique temple built in the shape of a chorten to subdue a demoness. In the evening, stroll through Paro town's main street, lined with traditional wooden buildings housing shops and cafes. Enjoy a dinner featuring international cuisine at your hotel.",
+                overnight: "Paro"
+            },
+            {
+                day: 7,
+                title: "Paro: Tiger's Nest Pilgrimage",
+                description: "Your journey culminates with the hike to Taktsang Goemba, the legendary Tiger's Nest Monastery. This is Bhutan's most iconic landmark, clinging to a sheer cliff face 900 meters above the valley. Start early to enjoy the cool morning air. The trail winds through pine forests draped in Spanish moss. Stop at the cafeteria for tea and a view of the monastery. Continue climbing to the viewpoint and then descend the steps to the waterfall before the final ascent to the entrance. Inside, visit the sacred shrines where Guru Rinpoche meditated. The sense of achievement and spiritual energy is profound. After the hike, treat yourself to a traditional hot stone bath at a local farmhouse or your hotel spa to soothe your muscles. The heated river stones release minerals that are excellent for relaxation. Enjoy a farewell gala dinner with cultural performances to celebrate your journey.",
+                overnight: "Paro"
+            },
+            {
+                day: 8,
+                title: "Departure",
+                description: "Wake up to your final morning in the Kingdom of Bhutan. Enjoy a leisurely breakfast with views of the mountains. Your guide and chauffeur will transfer you to Paro International Airport for your flight. As the plane takes off and banks over the valley, you'll have one last view of the Dzong and the Tiger's Nest. You leave with memories of a hidden kingdom, warm smiles, and a sense of inner peace. Tashi Delek and safe travels!",
+                overnight: "Departure"
+            }
         ]
     },
     {
         id: "gangtey-lodge-retreat",
         title: "Gangtey Lodge Retreat",
-        duration: "6 Days / 5 Nights",
+        duration: "8 Days / 7 Nights",
         category: "Luxury",
-        price: "$4,950",
+        price: "$6,800",
         image: "/assets/luxury/gantey.png", // Placeholder or use generic luxury image if not available
         detailImage: "/assets/luxury/gantey1.png",
-        description: "Disconnect to reconnect at the award-winning Gangtey Lodge. Nestled in the Phobjikha Valley, experience farmhouse luxury, spiritual immersion, and the famous hot stone baths. Enjoy local cuisine, cultural immersion, and breathtaking scenery throughout the day.",
+        description: "Disconnect to reconnect with this exclusive 8-day retreat centered around the award-winning Gangtey Lodge. Nestled in the Phobjikha Valley, this tour offers a profound sense of peace and isolation. Combine the rustic luxury of Gangtey with stays in Thimphu and Paro for a complete Bhutanese experience, featuring spiritual immersions, nature hikes, farm-to-table dining, and the famous traditional hot stone baths.",
+        featured: true,
         highlights: [
-            "Stay at the award-winning Gangtey Lodge",
-            "Morning prayers at Gangtey Monastery",
-            "Gangtey Nature Trail hike",
-            "Signature Hot Stone Bath"
+            "3-night immersive stay at Gangtey Lodge",
+            "Morning prayers with monks at Gangtey Monastery",
+            "Private nature trails and bird watching",
+            "Signature Hot Stone Bath experience",
+            "Traditional farmhouse dinner",
+            "Private hike to Tiger's Nest"
         ],
         inclusions: [
-            "Luxury accommodation at Gangtey Lodge",
-            "Farm-to-table gourmet meals",
-            "Private guide and vehicle",
-            "Arrival/Departure gifts"
+            "Luxury accommodation (Gangtey Lodge & 5-star hotels)",
+            "All gourmet meals and beverages",
+            "Private 4WD Land Cruiser",
+            "Senior licensed guide",
+            "One complimentary spa treatment",
+            "All taxes and royalties"
         ],
         itinerary: [
-            { day: 1, title: "Arrival Paro - Thimphu", description: "Upon arrival at Paro International Airport, you receive a VIP welcome and private transfer to Thimphu (1.5 hours). Check into a luxury hotel in Thimphu for your first night. In the evening, visit the impressive Tashichho Dzong (Fortress of the Glorious Religion), the seat of the government and the monarchy. Seeing the Dzong illuminated at night is a magical experience. Dinner at your hotel.", overnight: "Thimphu" },
-            { day: 2, title: "Thimphu - Gangtey", description: "The journey to Gangtey is a highlight in itself. Drive over the Dochula Pass (3,100m) and descend into the Wangdue valley before climbing again into the Black Mountains. Arrive at the Gangtey Lodge, an award-winning boutique property that redefines farmhouse luxury. The lodge offers sweeping views of the Phobjikha Valley. Welcome drinks by the fireplace. Watch the sunset over the valley from the terrace, a truly peaceful moment.", overnight: "Phobjikha" },
-            { day: 3, title: "Phobjikha Valley Immersion", description: "Wake up to the stunning views of the valley. After a gourmet breakfast, hike the Gangtey Nature Trail (1.5 hours), a gentle walk through pine forests and villages. Visit the Black-necked Crane Information Centre (seasonal). In the afternoon, return to the lodge to experience their signature Dotsho (Hot Stone Bath) in a private bathhouse with views of the valley. The bath helps release toxins and soothe muscles. Enjoy a farmhouse-style dinner at the lodge.", overnight: "Phobjikha" },
-            { day: 4, title: "Gangtey - Punakha", description: "Say goodbye to the alpine valley and descend to the subtropical warmth of Punakha (2.5 hours). Check into your luxury accommodation. Visit the magnificent Punakha Dzong, the winter capital of Bhutan, standing at the confluence of two rivers. Walk across the longest suspension bridge in Bhutan nearby. In the evening, enjoy a riverside walk or simply relax in the warmer climate.", overnight: "Punakha" },
-            { day: 5, title: "Punakha - Paro", description: "Drive back to Paro via the Dochula Pass. Visit the National Museum of Bhutan (Ta Dzong) to view ancient thangkas, weapons, and natural history exhibits. Check into your hotel in Paro. Spend your final evening browsing the high-quality handicraft shops in Paro town or enjoying a final cultural performance.", overnight: "Paro" },
-            { day: 6, title: "Departure", description: "After breakfast, your private chauffeur will drive you to Paro International Airport. The lodge provides a special departure gift as a token of remembrance. Tashi Delek!", overnight: "Departure" }
+            {
+                day: 1,
+                title: "Arrival Paro & Transfer to Thimphu",
+                description: "Upon arrival at Paro International Airport, you will be greeted by your personal guide and chauffeur with a traditional khada welcome. Drive to Thimphu, the capital city (1.5 hours), following the winding Pa Chhu and Wang Chhu rivers. Check into your luxury hotel (e.g., Le Meridien Thimphu or Taj Tashi). In the afternoon, visit the National Memorial Chorten, a focal point of daily worship for the locals. Later, drive to the Buddha Dordenma, a massive statue overlooking the valley. As the sun sets, the statue glows golden, offering a peaceful start to your trip. Dinner will be a welcome feast at the hotel, introducing you to the flavors of Bhutanese cuisine.",
+                overnight: "Thimphu"
+            },
+            {
+                day: 2,
+                title: "Thimphu to Gangtey: Into the Clouds",
+                description: "After breakfast, embark on a scenic 5-hour drive to the Phobjikha Valley. Stop at the Dochula Pass (3,100m) to admire the 108 memorial chortens and, weather permitting, the panoramic Himalayan range. Descend into the Wangdue valley and then climb up into the Black Mountains. You will arrive at Gangtey Lodge, a member of Small Luxury Hotels of the World. This lodge is designed to blend seamlessly with the traditional farmhouse architecture of the valley. From the main lodge, the view of the valley floor below is nothing short of spectacular. Enjoy a welcome drink by the massive stone fireplace. Settle into your suite, which features a freestanding bath with valley views. Dinner is served at the lodge's communal table or privately, featuring organic ingredients from the valley.",
+                overnight: "Phobjikha"
+            },
+            {
+                day: 3,
+                title: "Phobjikha: Monasteries & Nature Trails",
+                description: "Wake up to the mist rising from the valley floor. After a gourmet breakfast, walk up to the Gangtey Goemba, a 17th-century monastery that overlooks the entire valley. It is the largest Nyingmapa monastery in western Bhutan. Participate in a private prayer ceremony with the monks to receive blessings for your stay. Afterward, hike the Gangtey Nature Trail (1.5 hours), a gentle path that takes you through pine forests draped with lichen (Old Man's Beard) and past semitropical vegetation. The trail ends near the Black-necked Crane Information Centre. Visit the center to learn about these endangered majestic birds that migrate here from Tibet in winter (late Oct - Feb). Return to the lodge for lunch on the terrace. In the afternoon, try your hand at archery or darts in the lodge courtyard. Dinner at the lodge.",
+                overnight: "Phobjikha"
+            },
+            {
+                day: 4,
+                title: "Phobjikha: Village Life & Wellness",
+                description: "Today is dedicated to deeper immersion in the slow pace of valley life. Visit a local family in their traditional farmhouse to see how they live, cook, and farm. You can help churn butter or milk a cow if you wish. Enjoy a simple, authentic lunch with the family. In the afternoon, return to the lodge for their signature Dotsho (Hot Stone Bath). River stones are heated in a fire until red hot and then plunged into a wooden tub of water mixed with artemisia herbs. The sizzling stones release minerals that soothe aching muscles and relax the mind. Sip on a glass of wine or herbal tea as you soak with views of the valley. It is the ultimate wellness experience. Spend the evening stargazing from the terrace, as the lack of light pollution makes the night sky incredibly clear.",
+                overnight: "Phobjikha"
+            },
+            {
+                day: 5,
+                title: "Gangtey to Punakha: The Warm Valley",
+                description: "Bid farewell to the alpine highlands and descend to the subtropical valley of Punakha (3 hours). The change in climate and vegetation is dramatic. Check into your luxury resort in Punakha (e.g., Dhensa or Six Senses). Visit the majestic Punakha Dzong, the 'Palace of Great Happiness,' standing at the confluence of the Pho Chhu and Mo Chhu rivers. It is one of the most photogenic buildings in Bhutan, especially in spring when the jacaranda trees are in bloom. Walk across the longest suspension bridge nearby for thrills and views. Being at a lower altitude (1,200m), Punakha is warm and lush. Enjoy a walk through the rice paddies in the late afternoon. Dinner will be served al fresco at your hotel, taking advantage of the pleasant evening temperature.",
+                overnight: "Punakha"
+            },
+            {
+                day: 6,
+                title: "Punakha to Paro: Chortens & Museums",
+                description: "Drive back to Paro via the Dochula Pass. Stop for tea at the cafeteria on the pass to break the journey. Proceed to Paro and check into your hotel. In the afternoon, visit the National Museum of Bhutan (Ta Dzong). The cylindrical building houses a rare collection of Bhutanese art, masterworks, and bronze statues. It gives you a great context for the culture you have experienced. Walk down to Rinpung Dzong and cross the traditional cantilever bridge. Wander through Paro town's main street to pick up some unique souvenirs—handwoven kiras, prayer wheels, or cordialceps. In the evening, your guide can arrange a cultural show with masked dances and folk songs to celebrate your last nights in Bhutan. Dinner at a recommended local restaurant or your hotel.",
+                overnight: "Paro"
+            },
+            {
+                day: 7,
+                title: "Paro: The Tiger's Nest Hike",
+                description: "The finale of your journey is the hike to Taktsang Goemba (Tiger's Nest). Start early to avoid the midday sun. The trail climbs steadily through pine forests, offering glimpses of the monastery clinging to the cliffside. It takes about 2-3 hours to reach the top. The monastery is a sacred site where Guru Rinpoche is said to have meditated in the 8th century. The complex consists of four main temples and residential shelters designed by adapting to the rock fermentations. The view of the Paro valley from here is breathtaking. After visiting the temples, descend for a well-deserved lunch at the cafeteria or a picnic spot. Return to your hotel to rest. In the evening, enjoy a farewell dinner, reflecting on the memories of the mountains, the monasteries, and the kindness of the Bhutanese people.",
+                overnight: "Paro"
+            },
+            {
+                day: 8,
+                title: "Departure",
+                description: "After a final breakfast, transfer to Paro International Airport. Your guide and driver will assist you with checking in for your flight. As you depart, you take with you not just photos, but the spirit of 'Gross National Happiness' that permeates this unique Himalayan kingdom. Tashi Delek!",
+                overnight: "Departure"
+            }
         ]
     },
 
@@ -764,5 +931,5 @@ export const tours: Tour[] = [
             { day: 10, title: "Tiger's Nest Hike", description: "Conclude your Trans Bhutan Trail discovery with the ultimate pilgrimage: the hike to Taktsang (Tiger's Nest). Just as ancient pilgrims did, ascend the path to pay homage at this sacred site. Reflect on the kilometers you've covered and the history you've witnessed. Farewell dinner with traditional music and dance.", overnight: "Paro" },
             { day: 11, title: "Departure", description: "Transfer to Paro International Airport. Your trail journey ends here, but the connection to Bhutan's path will remain. Tashi Delek!", overnight: "Departure" }
         ]
-    }
+    },
 ];

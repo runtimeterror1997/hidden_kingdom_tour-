@@ -47,18 +47,37 @@ export default function ContactPage() {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    toast.success("Thank you for your inquiry!", {
-        description: "We will get back to you within 24 hours.",
-    });
-    form.reset();
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(values),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to send message');
+      }
+
+      toast.success("Thank you for your inquiry!", {
+          description: "We have received your message and will get back to you shortly.",
+      });
+      form.reset();
+    } catch (error: any) {
+      console.error(error);
+      toast.error("Submission Failed", {
+        description: error.message || "Please try again later or contact us directly via email.",
+      });
+    }
   }
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center pt-20">
+      <section className="relative h-[40vh] min-h-[500px] flex items-center justify-center pt-20">
         <div className="absolute inset-0 z-0">
           <Image 
             src="/assets/home/flags.png" 
@@ -88,8 +107,7 @@ export default function ContactPage() {
               <CardTitle className="font-serif">Call us</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-muted-foreground pb-8">
-              <p>+975-1777-7777</p>
-              <p>+975-7777-7777</p>
+              <p>+975-17257452</p>
             </CardContent>
           </Card>
 
@@ -101,8 +119,8 @@ export default function ContactPage() {
               <CardTitle className="font-serif">Our Address</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-muted-foreground pb-8">
-              <p>Thimphu City, Bhutan</p>
-              <p>Main Post Box 123</p>
+              <p>Jurka, Dopshari, Paro</p>
+            
             </CardContent>
           </Card>
 
@@ -114,8 +132,8 @@ export default function ContactPage() {
               <CardTitle className="font-serif">E-mail</CardTitle>
             </CardHeader>
             <CardContent className="text-center text-muted-foreground pb-8">
-              <p>info@hiddenkingdomtour.com</p>
-              <p>bookings@hiddenkingdomtour.com</p>
+              <p>oasistours.info@gmail.com</p>
+              <p>oasistours.booking@gmail.com</p>
             </CardContent>
           </Card>
         </div>
@@ -220,8 +238,13 @@ export default function ContactPage() {
                     )}
                   />
                   
-                  <Button type="submit" size="lg" className="w-full md:w-auto px-10 h-14 bg-primary hover:bg-primary/90 text-white font-bold rounded-full transition-all hover:scale-105">
-                    Send Message
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="w-full md:w-auto px-10 h-14 bg-primary hover:bg-primary/90 text-white font-bold rounded-full transition-all hover:scale-105"
+                    disabled={form.formState.isSubmitting}
+                  >
+                    {form.formState.isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Form>
@@ -254,7 +277,7 @@ export default function ContactPage() {
             <div className="space-y-6">
               <h3 className="text-xl font-serif font-bold border-l-4 border-primary pl-4">Why Contact Us?</h3>
               <p className="text-muted-foreground leading-relaxed text-sm">
-                Hidden Kingdom Tour is a premier provider of travel experiences in Bhutan. Our expert team ensures seamless travel, accommodation, and ticketing services, crafting tailor-made itineraries to meet your unique aspirations.
+                OASIS Tours and Treks is a premier provider of travel experiences in Bhutan. Our expert team ensures seamless travel, accommodation, and ticketing services, crafting tailor-made itineraries to meet your unique aspirations.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 <div className="p-4 bg-white dark:bg-zinc-900 border rounded-xl text-center">

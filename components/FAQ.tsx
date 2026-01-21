@@ -92,7 +92,7 @@ export function FAQ() {
             Frequently Asked Questions
           </h2>
           <p className="text-zinc-500 max-w-2xl mx-auto">
-            Everything you need to know about traveling to Bhutan and booking your journey with Hidden Kingdom Tour.
+            Everything you need to know about traveling to Bhutan and booking your journey with OASIS Tours and Treks.
           </p>
         </div>
 

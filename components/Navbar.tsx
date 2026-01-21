@@ -18,7 +18,6 @@ import {
   Calendar as CalendarIcon
 } from "lucide-react";
 // Tawk.to replaces the custom ChatBot
-// import { ChatBot } from "./ChatBot";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";

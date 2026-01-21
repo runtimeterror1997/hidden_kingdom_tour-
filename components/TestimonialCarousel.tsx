@@ -9,8 +9,6 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"; // Avatar might not be installed, I'll check.
-import Autoplay from "embla-carousel-autoplay"; // Need to install if I want autoplay, but I'll skip for now or use basic setup.
 
 // I'll simulate Avatar if not installed, or use simple div.
 // Shadcn Avatar: "npx shadcn@latest add avatar" - I haven't installed it.

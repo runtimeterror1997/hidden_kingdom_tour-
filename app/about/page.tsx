@@ -2,7 +2,7 @@ import Image from "next/image";
 import SectionWrapper from "@/components/SectionWrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { Users, MapPin, BookOpen, Clock, Leaf, Phone, Heart } from "lucide-react";
+import { Users, MapPin, BookOpen, Clock, Leaf, Phone } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -126,24 +126,7 @@ export default function AboutPage() {
          </div>
 
          {/* Philosophy Section */}
-         {/* <div className="bg-primary/5 rounded-3xl p-8 md:p-16 text-center space-y-8 relative overflow-hidden">
-             <div className="relative z-10 max-w-3xl mx-auto space-y-6">
-                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur rounded-full text-primary font-bold text-xs tracking-widest uppercase">
-                    <Heart className="w-3 h-3 fill-current" />
-                    Our Philosophy
-                 </div>
-                 <h2 className="text-3xl md:text-5xl font-serif font-bold text-zinc-900">
-                     Guests as Family
-                 </h2>
-                 <p className="text-lg text-zinc-700 leading-relaxed font-light">
-                     "In Bhutan, a guest is never just a client, but a friend who has traveled far to visit our home. Our philosophy is simple: we welcome you with the same warmth, care, and honesty that we extend to our own family."
-                 </p>
-                 <div className="pt-4">
-                     <p className="font-bold text-zinc-900">Kinga Wangchuk</p>
-                     <p className="text-sm text-zinc-500 uppercase tracking-widest">Founder, OASIS Tours and Treks</p>
-                 </div>
-             </div>
-         </div> */}
+
 
          {/* Gallery Section */}
          <div className="space-y-12">

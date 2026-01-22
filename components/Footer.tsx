@@ -108,8 +108,9 @@ export function Footer() {
               >
                 <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <defs>
-                    <linearGradient id="tiktok-gradient-footer" x1="0%" y1="0%" x2="100%" y2="0%">
-                      <stop offset="0%" stopColor="black" />
+                    <linearGradient id="tiktok-gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#25F4EE" />
+                      <stop offset="50%" stopColor="black" />
                       <stop offset="100%" stopColor="#FE2C55" />
                     </linearGradient>
                   </defs>
@@ -117,8 +118,12 @@ export function Footer() {
                   <circle cx="20" cy="20" r="19" stroke="url(#tiktok-gradient-footer)" strokeWidth="1.5" />
                   {/* Icon glyph */}
                   <g transform="translate(12, 12) scale(0.66)">
+                    {/* Cyan offset - bold top-left shift */}
+                    <path d="M16.59 3.69a4.83 4.83 0 0 1-3.77-4.25V-1h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V6.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 2 17.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#25F4EE" />
+                    {/* Red offset - bold bottom-right shift */}
+                    <path d="M22.59 9.69a4.83 4.83 0 0 1-3.77-4.25V5h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V12.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 8 23.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#FE2C55" />
+                    {/* Main glyph */}
                     <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="black" />
-                    <path d="M19.59 7.19a4.83 4.83 0 0 1-3.77-4.25V2.5h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.9a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.6a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#FE2C55" style={{ mixBlendMode: 'multiply' }} opacity="0.8" />
                   </g>
                 </svg>
               </a>

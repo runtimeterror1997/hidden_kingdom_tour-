@@ -9,6 +9,9 @@ import { Destinations } from "@/components/Destinations";
 import { tours } from "@/data/tours";
 import { getTestimonials } from "@/lib/contentful";
 
+export const revalidate = 60; // Revalidate every 60 seconds
+
+
 export default async function Home() {
   const featuredTours = tours.filter(t => t.featured).slice(0, 3);
   const testimonials = await getTestimonials();

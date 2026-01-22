@@ -50,13 +50,14 @@ export function Footer() {
               Explore the untouched beauty of the Land of the Thunder Dragon. Specializing in high-end, personalized journeys.
             </p>
 
-            <div className="flex gap-3 justify-center ">
+            <div className="flex gap-3 justify-center">
               {/* Facebook */}
               <a 
                 href="https://www.facebook.com/people/Oasis-tour-and-trek/61586763656788/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+                className="w-9 h-9 rounded-full border border-[#1877F2] flex items-center justify-center text-[#1877F2] bg-transparent transition-all hover:scale-110"
+                title="Facebook"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
                   <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
@@ -68,12 +69,32 @@ export function Footer() {
                 href="https://www.instagram.com/oasistoursandtreks_?igsh=MXJtM2ttajRxOGF3Nw==" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+                className="w-9 h-9 rounded-full flex items-center justify-center bg-transparent transition-all group/insta hover:scale-110"
+                title="Instagram"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-4 w-4">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+                <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="instagram-gradient-footer" x1="100%" y1="100%" x2="0%" y2="0%">
+                      <stop stopColor="#405DE6" offset="0%" />
+                      <stop stopColor="#5851DB" offset="10%" />
+                      <stop stopColor="#833AB4" offset="20%" />
+                      <stop stopColor="#C13584" offset="30%" />
+                      <stop stopColor="#E1306C" offset="40%" />
+                      <stop stopColor="#FD1D1D" offset="50%" />
+                      <stop stopColor="#F56040" offset="60%" />
+                      <stop stopColor="#F77737" offset="70%" />
+                      <stop stopColor="#FCAF45" offset="80%" />
+                      <stop stopColor="#FFDC80" offset="100%" />
+                    </linearGradient>
+                  </defs>
+                  {/* Circular border */}
+                  <circle cx="20" cy="20" r="19" stroke="url(#instagram-gradient-footer)" strokeWidth="1.5" />
+                  {/* Icon glyph */}
+                  <g transform="translate(12, 12) scale(0.66)">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#instagram-gradient-footer)" strokeWidth="2.5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="url(#instagram-gradient-footer)" strokeWidth="2.5" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="url(#instagram-gradient-footer)" strokeWidth="2.5" strokeLinecap="round" />
+                  </g>
                 </svg>
               </a>
 
@@ -82,12 +103,26 @@ export function Footer() {
                 href="https://www.tiktok.com/@touragent2?_r=1&_t=ZS-93G2CHp1uTQ" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-full border border-zinc-200 flex items-center justify-center text-zinc-400 hover:text-primary hover:border-primary transition-all"
+                className="w-9 h-9 rounded-full flex items-center justify-center bg-transparent transition-all group/tiktok overflow-hidden hover:scale-110"
+                title="TikTok"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="none" className="h-4 w-4">
-                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <defs>
+                    <linearGradient id="tiktok-gradient-footer" x1="0%" y1="0%" x2="100%" y2="0%">
+                      <stop offset="0%" stopColor="black" />
+                      <stop offset="100%" stopColor="#FE2C55" />
+                    </linearGradient>
+                  </defs>
+                  {/* Circular border */}
+                  <circle cx="20" cy="20" r="19" stroke="url(#tiktok-gradient-footer)" strokeWidth="1.5" />
+                  {/* Icon glyph */}
+                  <g transform="translate(12, 12) scale(0.66)">
+                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="black" />
+                    <path d="M19.59 7.19a4.83 4.83 0 0 1-3.77-4.25V2.5h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.9a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.6a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#FE2C55" style={{ mixBlendMode: 'multiply' }} opacity="0.8" />
+                  </g>
                 </svg>
               </a>
+
 
               {/* YouTube */}
               

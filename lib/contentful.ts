@@ -24,8 +24,13 @@ export interface Testimonial {
 }
 
 export async function getTestimonials(): Promise<Testimonial[]> {
+    if (!isContentfulConfigured) {
+        console.warn('Contentful is NOT configured. Please check CONTENTFUL_SPACE_ID and CONTENTFUL_ACCESS_TOKEN.');
+        return [];
+    }
+
     if (!contentfulClient) {
-        console.warn('Contentful client is not configured. Returning empty testimonials.');
+        console.error('Contentful client is null despite being configured.');
         return [];
     }
 
@@ -36,17 +41,31 @@ export async function getTestimonials(): Promise<Testimonial[]> {
         });
 
 
-        console.log('Fetched testimonials:', response.items.length);
+        console.log(`Successfully fetched ${response.items.length} testimonial entries from Contentful.`);
 
-        return response.items.map((item: any) => ({
-            id: Number(item.fields.id),
-            name: item.fields.name,
-            location: item.fields.location,
-            text: item.fields.text,
-            rating: item.fields.rating,
-        }));
-    } catch (error) {
-        console.error('Error fetching testimonials:', error);
+        if (response.items.length === 0) {
+            console.log('No entries found for content_type: "testimonial". Check your Contentful dashboard.');
+        }
+
+        return response.items.map((item: any) => {
+            // Log the first item to verify structure if needed
+            if (response.items.indexOf(item) === 0) {
+                console.log('Sample testimonial entry fields:', Object.keys(item.fields));
+            }
+            return {
+                id: Number(item.fields.id || 0),
+                name: item.fields.name || 'Anonymous',
+                location: item.fields.location || '',
+                text: item.fields.text || '',
+                rating: Number(item.fields.rating || 5),
+            };
+        });
+    } catch (error: any) {
+        console.error('Error fetching testimonials from Contentful:', {
+            message: error.message,
+            stack: error.stack,
+            details: error.details
+        });
         return [];
     }
 }

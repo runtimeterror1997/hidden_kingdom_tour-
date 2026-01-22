@@ -7,9 +7,11 @@ import { TourCard } from "@/components/TourCard";
 import { TestimonialCarousel } from "@/components/TestimonialCarousel";
 import { Destinations } from "@/components/Destinations";
 import { tours } from "@/data/tours";
+import { getTestimonials } from "@/lib/contentful";
 
-export default function Home() {
+export default async function Home() {
   const featuredTours = tours.filter(t => t.featured).slice(0, 3);
+  const testimonials = await getTestimonials();
 
   return (
     <div className="flex flex-col min-h-screen">
@@ -110,7 +112,7 @@ export default function Home() {
              <h2 className="text-3xl md:text-4xl font-serif font-bold">Traveler Stories</h2>
              <p className="text-muted-foreground">Hear from our guests who have experienced the magic.</p>
         </div>
-        <TestimonialCarousel />
+        <TestimonialCarousel testimonials={testimonials} />
       </SectionWrapper>
 
       {/* CTA / Newsletter */}

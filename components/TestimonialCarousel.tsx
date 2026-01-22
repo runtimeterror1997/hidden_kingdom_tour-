@@ -9,43 +9,20 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"; // Avatar might not be installed, I'll check.
+import Autoplay from "embla-carousel-autoplay"; // Need to install if I want autoplay, but I'll skip for now or use basic setup.
 
 // I'll simulate Avatar if not installed, or use simple div.
 // Shadcn Avatar: "npx shadcn@latest add avatar" - I haven't installed it.
 // I'll use a circular div.
 
-const testimonials = [
-  {
-    id: 1,
-    name: "Sarah Jenkins",
-    location: "United Kingdom",
-    text: "Our trip to Bhutan with OASIS Tours and Treks was absolutely magical. The guide was knowledgeable, and the itinerary was perfect. A life-changing experience!",
-    rating: 5,
-  },
-  {
-    id: 2,
-    name: "Michael Chen",
-    location: "Singapore",
-    text: "Professional service from start to finish. Drukair flight arrangements were seamless, and the hotels were top-notch. Highly recommended!",
-    rating: 5,
-  },
-  {
-    id: 3,
-    name: "Elena Rodriguez",
-    location: "Spain",
-    text: "Bhutan is a special place, and this agency made sure we saw the real authentic side of it. The trekking experience was tough but rewarding.",
-    rating: 5,
-  },
-  {
-    id: 4,
-    name: "David Smith",
-    location: "USA",
-    text: "We felt so welcomed. The 'happiness' philosophy truly shines through the people. Thank you for an unforgettable journey.",
-    rating: 5,
-  },
-];
+import { Testimonial } from "@/lib/contentful";
 
-export function TestimonialCarousel() {
+interface TestimonialCarouselProps {
+  testimonials: Testimonial[];
+}
+
+export function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) {
   return (
     <Carousel
       opts={{

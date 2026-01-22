@@ -44,7 +44,6 @@ export const tours: Tour[] = [
             "3-star accommodation (double occupancy)",
             "All meals and bottled water",
             "SDF (Sustainable Development Fee) & Visa fees",
-            "Entrance fees to all monuments"
         ],
         itinerary: [
             {
@@ -255,7 +254,6 @@ export const tours: Tour[] = [
         inclusions: [
             "Expert birding guide",
             "High-quality spotting scopes",
-            "All permits and entry fees",
             "3-star accommodation & meals"
         ],
         itinerary: [
@@ -727,7 +725,6 @@ export const tours: Tour[] = [
             "Private Guide & Luxury Chauffeur Service",
             "All Gourmet Meals & Non-alcoholic Beverages",
             "Spa Credit & Welcome Amenities",
-            "All Entry Fees & Permits",
             "Daily Housekeeping & Turndown Service"
         ],
         itinerary: [
@@ -805,7 +802,6 @@ export const tours: Tour[] = [
             "Private 4WD Land Cruiser",
             "Senior licensed guide",
             "One complimentary spa treatment",
-            "All taxes and royalties"
         ],
         itinerary: [
             {

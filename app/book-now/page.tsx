@@ -413,9 +413,9 @@ function BookingForm() {
                   If you have any questions before booking, feel free to reach out to our team.
                 </p>
                 <div className="space-y-3">
-                  <a href="tel:+97517556636" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
+                  <a href="tel:+97517257452" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                     <Phone className="w-4 h-4 text-primary" />
-                    +975-1777-7777
+                    +975-17257452
                   </a>
                   <a href="mailto:oasistours.info@gmail.com" className="flex items-center gap-3 text-sm hover:text-primary transition-colors">
                     <Mail className="w-4 h-4 text-primary" />

@@ -110,13 +110,15 @@ export default async function Home() {
       </section>
 
       {/* Testimonials */}
+      {testimonials?.length > 0 && (
       <SectionWrapper>
-        <div className="text-center mb-12 space-y-4">
-             <h2 className="text-3xl md:text-4xl font-serif font-bold">Traveler Stories</h2>
-             <p className="text-muted-foreground">Hear from our guests who have experienced the magic.</p>
-        </div>
+          <div className="text-center mb-12 space-y-4">
+            <h2 className="text-3xl md:text-4xl font-serif font-bold">Traveler Stories</h2>
+            <p className="text-muted-foreground">Hear from our guests who have experienced the magic.</p>
+          </div>
         <TestimonialCarousel testimonials={testimonials} />
-      </SectionWrapper>
+        </SectionWrapper>
+        )}
 
       {/* CTA / Newsletter */}
       <section className="bg-primary text-white py-24 relative overflow-hidden bg-[url('/assets/home/airport.png')] bg-cover bg-center">

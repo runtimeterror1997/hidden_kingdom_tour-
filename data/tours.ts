@@ -278,7 +278,7 @@ export const tours: Tour[] = [
     {
         id: "spiritual-immersion",
         title: "Spiritual Immersion Tour",
-        duration: "6 Days / 5 Nights",
+        duration: "7 Days / 6 Nights",
         category: "Cultural",
         price: "$1,450",
         image: "/assets/home/yulay.png",
@@ -289,6 +289,7 @@ export const tours: Tour[] = [
             "Meditation session at Gangtey Monastery",
             "Butter lamp ceremony in Thimphu",
             "Visit to the Fertility Temple",
+            "Hike to the legendary Tiger's Nest",
             "Stay in a monastery guesthouse (optional)"
         ],
         inclusions: [
@@ -303,24 +304,26 @@ export const tours: Tour[] = [
             { day: 3, title: "Punakha - Chimi Lhakhang", description: "Travel to Punakha over the Dochula Pass. The 108 chortens here were built to atone for loss of life in conflict, a reminder of the value of peace. Descend to walk through rice fields to Chimi Lhakhang, the temple of the Divine Madman. His teaching methods were unorthodox (using humor and sexuality), and the temple is now a pilgrimage site for fertility and protection.", overnight: "Punakha" },
             { day: 4, title: "Gangtey Monastery", description: "Drive to the Phobjikha Valley. Visit the Gangtey Goemba, the largest Nyingma monastery in western Bhutan. It is a major center for Buddhist studies. Interact with the monks and perhaps witness a debate session. The valley itself is a conservation area for Black-necked Cranes, which the locals revere as heavenly birds.", overnight: "Phobjikha" },
             { day: 5, title: "Paro Return & Butter Lamps", description: "Return to Paro. In the evening, visit a local nunnery or temple to perform a butter lamp offering ceremony. Lighting a lamp symbolizes the dispelling of darkness (ignorance) and the cultivation of wisdom. It is a moving and visually beautiful ritual. Enjoy a final vegetarian dinner at a farmhouse.", overnight: "Paro" },
-            { day: 6, title: "Departure", description: "Transfer to Paro International Airport. Depart with a lighter spirit and a peaceful mind.", overnight: "Departure" }
+            { day: 6, title: "The Ultimate Pilgrimage: Hike to the Tiger's Nest", description: "The highlight of any journey to Bhutan is the hike to Taktsang Goemba, or Tiger's Nest. Perched on a cliff 900 meters above the valley, it is where Guru Rinpoche is said to have meditated. The hike is as much a spiritual challenge as a physical one, through pine forests draped with moss and prayer flags. Reaching the monastery provides a deep sense of peace and accomplishment. Evening at leisure for a traditional hot stone bath.", overnight: "Paro" },
+            { day: 7, title: "Departure", description: "Transfer to Paro International Airport. Depart with a lighter spirit and a peaceful mind.", overnight: "Departure" }
         ]
     },
     // --- Additional Cultural Tours ---
     {
         id: "glimpse-of-bhutan",
         title: "Glimpse of Bhutan",
-        duration: "5 Days / 4 Nights",
+        duration: "7 Days / 6 Nights",
         category: "Cultural",
         price: "$1,250",
         image: "/assets/home/punakha1.png",
         detailImage: "/assets/home/dochula.png",
-        description: "A perfect introduction to Bhutan, covering the essential highlights of Paro, Thimphu, and Punakha. Ideal for those with limited time who want to experience the best. Enjoy local cuisine, cultural immersion, and breathtaking scenery throughout the day.",
+        description: "A perfect introduction to Bhutan, covering the essential highlights of Paro, Thimphu, and Punakha. This expanded itinerary now includes the serene Phobjikha valley for a more complete experience. Enjoy local cuisine, cultural immersion, and breathtaking scenery.",
         highlights: [
             "Punakha Dzong architecture",
             "Buddha Dordenma Statue",
             "Tiger's Nest Hike",
-            "Dochula Pass panoramic views"
+            "Dochula Pass panoramic views",
+            "Phobjikha Glacial Valley"
         ],
         inclusions: [
             "3-star Accommodation",
@@ -330,10 +333,12 @@ export const tours: Tour[] = [
         ],
         itinerary: [
             { day: 1, title: "Arrival Paro - Thimphu", description: "Touch down in Paro and drive immediately to Thimphu (1 hr). Stop at Chuzom (river confluence) to see the three styles of stupas. In Thimphu, visit the National Memorial Chorten, constantly buzzing with devotees. Visit the glorious Tashichho Dzong in the late afternoon to see the flag lowering ceremony. Dinner at a traditional Bhutanese restaurant.", overnight: "Thimphu" },
-            { day: 2, title: "Thimphu to Punakha", description: "Rise early for the drive to Dochula Pass. If clear, the mountain views are incredible. Continue to Punakha to visit the 'Palace of Great Happiness' (Punakha Dzong), located at the river confluence. Walk across the 160m suspension bridge nearby for photos and a thrill. On the way back or forth, take a short hike to Chimi Lhakhang. Overnight in the balmy Punakha valley.", overnight: "Punakha" },
-            { day: 3, title: "Punakha to Paro", description: "Drive back to Paro. Visit the National Museum of Bhutan (Ta Dzong) to see a collection of thangkas, festival masks, and heritage items. Walk down to the Rinpung Dzong. In the evening, stroll through Paro's main street, lined with traditional wooden buildings housing shops and cafes.", overnight: "Paro" },
-            { day: 4, title: "Tiger's Nest Excursion", description: "The highlight of the trip: hiking to Taktsang Goemba (Tiger's Nest). Start early to beat the heat. The trail goes through pine forests. Visit the monastery temples clinging to the rock. After the hike, treat yourself to a traditional hot stone bath (Dotsho) to soothe your muscles. Farewell dinner.", overnight: "Paro" },
-            { day: 5, title: "Departure", description: "Transfer to Paro Airport. Even a short glimpse of Bhutan leaves a lasting impression.", overnight: "Departure" }
+            { day: 2, title: "Thimphu: Cultural & Artistic Exploration", description: "Spend a full day exploring the capital's treasures. Visit the Buddha Dordenma for panoramic views, the Institute for Zorig Chusum (Painting School), and the National Textile Museum. In the afternoon, visit the Motithang Takin Preserve to see the unique national animal. Wander through the local craft bazaar for authentic souvenirs.", overnight: "Thimphu" },
+            { day: 3, title: "Thimphu to Punakha", description: "Rise early for the drive to Dochula Pass. If clear, the mountain views are incredible. Continue to Punakha to visit the 'Palace of Great Happiness' (Punakha Dzong), located at the river confluence. Walk across the 160m suspension bridge nearby for photos and a thrill. On the way back or forth, take a short hike to Chimi Lhakhang. Overnight in the balmy Punakha valley.", overnight: "Punakha" },
+            { day: 4, title: "Punakha to the Glacial Phobjikha Valley", description: "Drive into the wide, U-shaped glacial valley of Phobjikha. Visit the 17th-century Gangtey Monastery and take a gentle walk along the Gangtey Nature Trail. This valley is the winter home to the Black-necked Cranes and offers some of the most serene landscapes in Bhutan.", overnight: "Phobjikha" },
+            { day: 5, title: "Phobjikha to Paro", description: "Drive back to Paro. Visit the National Museum of Bhutan (Ta Dzong) to see a collection of thangkas, festival masks, and heritage items. Walk down to the Rinpung Dzong. In the evening, stroll through Paro's main street, lined with traditional wooden buildings housing shops and cafes.", overnight: "Paro" },
+            { day: 6, title: "Tiger's Nest Excursion", description: "The highlight of the trip: hiking to Taktsang Goemba (Tiger's Nest). Start early to beat the heat. The trail goes through pine forests. Visit the monastery temples clinging to the rock. After the hike, treat yourself to a traditional hot stone bath (Dotsho) to soothe your muscles. Farewell dinner.", overnight: "Paro" },
+            { day: 7, title: "Departure", description: "Transfer to Paro Airport. Even a short glimpse of Bhutan leaves a lasting impression.", overnight: "Departure" }
         ]
     },
     {
@@ -863,7 +868,7 @@ export const tours: Tour[] = [
     {
         id: "dagala-thousand-lakes",
         title: "Dagala Thousand Lakes Trek",
-        duration: "6 Days / 5 Nights",
+        duration: "7 Days / 6 Nights",
         category: "Trekking",
         price: "$1,650",
         image: "/assets/trekking/dagala.png",
@@ -889,7 +894,8 @@ export const tours: Tour[] = [
             { day: 3, title: "Labatama Halt", description: "A dedicated day to explore the stunning lakes surrounding your campsite. Hike to Seto Tsho, Jaget Tsho, and other smaller lakes hidden in the ridges. It's a photographer's paradise and a perfect spot for trout fishing (permit required). You can also hike to a nearby peak for better panoramic views of the entire Bhutanese Himalayan range, including Jomolhari, Jichu Drake, and Masang Gang. Return to Labatama for a hearty camp dinner.", overnight: "Labatama Camp" },
             { day: 4, title: "Labatama - Panka", description: "The trail climbs along the western side of Dala Tsho lake to a saddle at 4,520m, the highest point of your trek. From the summit, the view of the Himalayan peaks is unparalleled. On a clear day, up to major peaks can be visible. Descend towards Panka (4,000m), passing more lakes and likely encountering yak herds grazing in the high meadows. Panka is a beautiful campsite with open views towards the Dagala range.", overnight: "Panka Camp" },
             { day: 5, title: "Panka - Talakha", description: "A day of scenic ridge walking. You will cross several passes, each offering a different perspective of the Thimphu valley far below and the mountains above. The trail leads through blue pine forests filled with birdsong. You will camp near Talakha Goemba (3,080m), a monastery perched on a ridge with a commanding view of Thimphu city twinkling at night. Visit the monastery in the evening to interact with the resident monks.", overnight: "Talakha Camp" },
-            { day: 6, title: "Talakha - Thimphu", description: "Wake up to sunrise views over Thimphu. The final descent is steep but short, leading down to Chamgang village through apple orchards. Your vehicle awaits to drive you to Thimphu. Check into your hotel and enjoy a hot shower—a welcome luxury after five days of camping! In the evening, celebrate the completion of your trek with a traditional Bhutanese farewell dinner featuring cultural performances.", overnight: "Thimphu" }
+            { day: 6, title: "Talakha - Thimphu", description: "Wake up to sunrise views over Thimphu. The final descent is steep but short, leading down to Chamgang village through apple orchards. Your vehicle awaits to drive you to Thimphu. Check into your hotel and enjoy a hot shower—a welcome luxury after five days of camping! In the evening, celebrate the completion of your trek with a traditional Bhutanese farewell dinner featuring cultural performances.", overnight: "Thimphu" },
+            { day: 7, title: "Departure", description: "After breakfast, transfer to Paro International Airport for your final departure. Savor the last views of the Dragon Kingdom as you fly over the Himalayas.", overnight: "Departure" }
         ]
     },
     // --- Additional Adventure Tours ---

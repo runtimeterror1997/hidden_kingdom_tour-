@@ -76,6 +76,8 @@ const Hotels = ({ location }: { location?: string }) => {
                   alt={hotel.name} 
                   fill 
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  quality={90}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <Button variant="secondary" className="rounded-full bg-white/90 text-zinc-900 font-bold text-xs">
@@ -153,6 +155,8 @@ const Hotels = ({ location }: { location?: string }) => {
                   alt={selectedHotel.name} 
                   fill 
                   className="object-cover"
+                  quality={90}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                 <div className="absolute bottom-8 left-8 right-8 text-white">

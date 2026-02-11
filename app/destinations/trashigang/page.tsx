@@ -13,6 +13,7 @@ export default function TrashigangPage() {
       image={destination.image}
       fullDescription={destination.fullDescription}
       mustVisit={destination.mustVisit}
+      objectPosition={destination.objectPosition}
     />
   );
 }

@@ -30,6 +30,8 @@ export function TravelGuideDetail({
             fill
             className="object-cover"
             priority
+            quality={90}
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>

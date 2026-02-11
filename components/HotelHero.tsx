@@ -10,6 +10,8 @@ const HotelHero = () => {
           fill 
           className="object-cover"
           priority
+          quality={90}
+          sizes="100vw"
         />
         <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-transparent to-black/40" />
       </div>

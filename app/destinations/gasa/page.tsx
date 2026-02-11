@@ -13,6 +13,7 @@ export default function GasaPage() {
       image={destination.image}
       fullDescription={destination.fullDescription}
       mustVisit={destination.mustVisit}
+      objectPosition={destination.objectPosition}
     />
   );
 }

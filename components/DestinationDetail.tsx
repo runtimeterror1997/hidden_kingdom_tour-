@@ -14,6 +14,7 @@ interface DestinationDetailProps {
   image: string;
   fullDescription: string;
   mustVisit: string[];
+  objectPosition?: string; // Optional custom focal point
 }
 
 export default function DestinationDetail({
@@ -22,37 +23,44 @@ export default function DestinationDetail({
   image,
   fullDescription,
   mustVisit,
+  objectPosition = "center", // Default to center if not specified
 }: DestinationDetailProps) {
   return (
     <div className="min-h-screen bg-white dark:bg-black">
       {/* Hero Section */}
-      <section className="relative h-[80vh] min-h-[650px] flex items-center justify-center overflow-hidden bg-zinc-900 group">
-        <div className="absolute inset-0 z-0">
+      <section className="relative h-[60vh] min-h-[500px] flex items-end overflow-hidden bg-zinc-900">
+        <div className="absolute inset-0">
           <Image 
             src={image} 
             alt={name} 
-            fill 
-            className="object-cover transition-transform duration-1000 group-hover:scale-110"
+            fill
+            className="object-cover scale-105"
+            style={{ objectPosition }}
             priority
+            quality={100}
+            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-black/40 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
+           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/20" />
         </div>
         
-        <div className="relative z-10 container mx-auto px-4 text-center text-white space-y-6 pt-32">
-          <div className="flex justify-center mb-4">
-             <Button variant="ghost" asChild className="text-white hover:text-primary backdrop-blur-md bg-white/10 rounded-full border border-white/20">
-                <Link href="/destinations" className="flex items-center gap-2">
-                   <ArrowLeft className="w-4 h-4" />
-                   Back to Destinations
-                </Link>
-             </Button>
-          </div>
-          <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight animate-in fade-in slide-in-from-bottom-8 duration-700">
-             {name}
-          </h1>
-          <div className="flex items-center justify-center gap-3 text-white/90 font-medium tracking-widest uppercase text-sm animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-200">
-            <MapPin className="w-4 h-4 text-primary" />
-            <span>At altitude: {altitude}</span>
+        <div className="relative z-10 container mx-auto px-4 pb-12 pt-32 text-white">
+          <div className="max-w-4xl space-y-4">
+            <Link 
+              href="/destinations" 
+              className="inline-flex items-center gap-2 text-sm text-white/80 hover:text-white transition-colors mb-4"
+            >
+              <ArrowLeft className="w-4 h-4" />
+              Back to Destinations
+            </Link>
+            
+            <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight leading-tight">
+              {name}
+            </h1>
+            
+            <div className="flex items-center gap-3 text-white/90 text-sm">
+              <MapPin className="w-4 h-4 text-primary" />
+              <span className="font-medium">{altitude}</span>
+            </div>
           </div>
         </div>
       </section>

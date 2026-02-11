@@ -20,7 +20,14 @@ export function TourCard({ tour }: TourCardProps) {
       <div className="relative h-64 w-full overflow-hidden bg-muted">
         {/* Placeholder for Image if not available */}
         <div className="absolute inset-0 bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center text-muted-foreground">
-             <Image src={tour.image} alt={tour.title} fill className="object-cover transition-transform duration-500 group-hover:scale-105" />
+             <Image 
+               src={tour.image} 
+               alt={tour.title} 
+               fill 
+               className="object-cover transition-transform duration-500 group-hover:scale-105" 
+               quality={90}
+               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+             />
         </div>
         <div className="absolute top-4 left-4">
              <Badge variant="secondary" className="bg-primary/90 text-primary-foreground backdrop-blur-sm shadow-sm hover:bg-primary">

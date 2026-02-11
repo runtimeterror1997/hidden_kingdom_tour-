@@ -61,7 +61,7 @@ export default async function Home() {
       </section>
 
       {/* Intro Section - Why Bhutan */}
-      <SectionWrapper className="text-center space-y-12">
+      <SectionWrapper className="text-center space-y-10">
         <div className="space-y-4 max-w-3xl mx-auto">
            <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary">Happiness is a Place</h2>
            <p className="text-muted-foreground text-lg leading-relaxed">
@@ -89,7 +89,7 @@ export default async function Home() {
       <Destinations />
 
       {/* Featured Tours */}
-      <section className="bg-zinc-50 dark:bg-black/20">
+      <section className="bg-zinc-50 dark:bg-black/20 -mt-12">
         <SectionWrapper>
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
                 <div className="space-y-2">

@@ -164,7 +164,7 @@ export function Navbar() {
           
           {/* Top Row: Info Bar & Logo */}
           <div className={cn(
-            "flex items-center justify-between border-b transition-all duration-500",
+            "flex items-center border-b transition-all duration-500",
             isScrolled ? "pb-2 border-zinc-200/50" : "pb-4 border-white/10"
           )}>
              {/* Left: Contact Info */}
@@ -183,7 +183,7 @@ export function Navbar() {
              </div>
 
              {/* Center: Logo */}
-             <div className="flex-none px-8">
+             <div className="flex-none flex justify-center px-8">
                 <Link href="/" className="flex items-center group transition-all duration-700 hover:scale-105 shrink-0">
                   <div className={cn(
                     "relative transition-all duration-700",
@@ -200,85 +200,8 @@ export function Navbar() {
                 </Link>
              </div>
 
-             {/* Right: Socials */}
-             <div className="flex-1 flex items-center justify-end gap-3 uppercase transition-all duration-500">
-                {/* Facebook */}
-                <a 
-                  target="_blank" 
-                  href="https://www.facebook.com/people/Oasis-tour-and-trek/61586763656788/" 
-                  className={cn(
-                    "p-1.5 rounded-full border border-[#1877F2] flex items-center justify-center text-[#1877F2] bg-transparent transition-all hover:scale-110"
-                  )}
-                  title="Facebook"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-3.5 h-3.5">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-                  </svg>
-                </a>
-                
-                {/* Instagram */}
-                <a 
-                  target="_blank" 
-                  href="https://www.instagram.com/oasistoursandtreks_?igsh=MXJtM2ttajRxOGF3Nw==" 
-                  className={cn(
-                    "p-1.5 rounded-full flex items-center justify-center bg-transparent transition-all group/social hover:scale-110"
-                  )}
-                  title="Instagram"
-                >
-                   <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="instagram-gradient-navbar" x1="100%" y1="100%" x2="0%" y2="0%">
-                        <stop stopColor="#405DE6" offset="0%" />
-                        <stop stopColor="#5851DB" offset="10%" />
-                        <stop stopColor="#833AB4" offset="20%" />
-                        <stop stopColor="#C13584" offset="30%" />
-                        <stop stopColor="#E1306C" offset="40%" />
-                        <stop stopColor="#FD1D1D" offset="50%" />
-                        <stop stopColor="#F56040" offset="60%" />
-                        <stop stopColor="#F77737" offset="70%" />
-                        <stop stopColor="#FCAF45" offset="80%" />
-                        <stop stopColor="#FFDC80" offset="100%" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="20" cy="20" r="19" stroke="url(#instagram-gradient-navbar)" strokeWidth="2" />
-                    <g transform="translate(10, 10) scale(0.83)">
-                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="url(#instagram-gradient-navbar)" strokeWidth="2.5" />
-                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="url(#instagram-gradient-navbar)" strokeWidth="2.5" />
-                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="url(#instagram-gradient-navbar)" strokeWidth="2.5" strokeLinecap="round" />
-                    </g>
-                  </svg>
-                </a>
-
-                {/* TikTok */}
-                <a 
-                  target="_blank" 
-                  href="https://www.tiktok.com/@touragent2?_r=1&_t=ZS-93G2CHp1uTQ" 
-                  className={cn(
-                    "p-1.5 rounded-full flex items-center justify-center bg-transparent transition-all group/social hover:scale-110"
-                  )}
-                  title="TikTok"
-                >
-                  <svg width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <linearGradient id="tiktok-gradient-navbar" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#25F4EE" />
-                        <stop offset="50%" stopColor="black" />
-                        <stop offset="100%" stopColor="#FE2C55" />
-                      </linearGradient>
-                    </defs>
-                    <circle cx="20" cy="20" r="19" stroke="url(#tiktok-gradient-navbar)" strokeWidth="2" />
-                    <g transform="translate(10, 10) scale(0.83)">
-                      {/* Cyan offset - bold top-left shift */}
-                      <path d="M16.59 3.69a4.83 4.83 0 0 1-3.77-4.25V-1h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V6.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 2 17.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#25F4EE" />
-                      {/* Red offset - bold bottom-right shift */}
-                      <path d="M22.59 9.69a4.83 4.83 0 0 1-3.77-4.25V5h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V12.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 8 23.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="#FE2C55" />
-                      {/* Main glyph */}
-                      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" fill="black" />
-                    </g>
-                  </svg>
-                </a>
-             </div>
-
+            {/* Right: Socials (Hidden/Removed) */}
+             <div className="flex-1"></div>
           </div>
 
           {/* Bottom Row: Navigation Links */}

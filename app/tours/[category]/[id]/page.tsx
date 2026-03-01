@@ -59,11 +59,11 @@ export default async function TourDetailsPage({ params }: PageProps) {
                  </div>
                  <div className="flex items-center gap-2">
                      <MapPin className="w-5 h-5 text-primary" />
-                     <span>Paro, Thimphu, Punakha</span>
+                     <span>{tour.places.join(", ")}</span>
                  </div>
                  <div className="flex items-center gap-2">
                      <Calendar className="w-5 h-5 text-primary" />
-                     <span>Best time: Mar-May, Sep-Nov</span>
+                     <span>Best time: {tour.bestTime}</span>
                  </div>
              </div>
          </div>
@@ -108,6 +108,21 @@ export default async function TourDetailsPage({ params }: PageProps) {
               )}
 
               <div className="space-y-6">
+                  <h2 className="text-3xl font-serif font-bold">Places Visited</h2>
+                  <div className="flex flex-wrap gap-2">
+                      {tour.places.map((place, i) => (
+                          <span
+                              key={i}
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20"
+                          >
+                              <MapPin className="w-3.5 h-3.5" />
+                              {place}
+                          </span>
+                      ))}
+                  </div>
+              </div>
+
+              <div className="space-y-6">
                   <h2 className="text-3xl font-serif font-bold">Itinerary</h2>
                   <div className="border-l-2 border-primary/20 space-y-8 pl-8 py-2 relative">
                       {tour.itinerary.map((day) => (
@@ -115,7 +130,14 @@ export default async function TourDetailsPage({ params }: PageProps) {
                               <span className="absolute -left-[41px] top-1 w-5 h-5 rounded-full border-4 border-white dark:border-black bg-primary box-content ring-1 ring-primary/20"></span>
                               <h3 className="text-xl font-bold mb-2">Day {day.day}: {day.title}</h3>
                               <p className="text-muted-foreground">{day.description}</p>
+                              {day.overnight && day.overnight !== "Departure" && (
+                                <div className="mt-3 inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-amber-50 dark:bg-amber-950/30 text-amber-700 dark:text-amber-400 border border-amber-200 dark:border-amber-800">
+                                  <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9A9 9 0 0 0 12 3Zm0 16a7 7 0 1 1 7-7 7 7 0 0 1-7 7Z" opacity=".3"/><path d="M12 1a11 11 0 1 0 11 11A11 11 0 0 0 12 1Zm5.64 7.36A9 9 0 0 1 12 21a9 9 0 0 1 0-18 9 9 0 0 1 5.64 1.89Z"/></svg>
+                                  Overnight: {day.overnight}
+                                </div>
+                              )}
                           </div>
+
                       ))}
                   </div>
               </div>

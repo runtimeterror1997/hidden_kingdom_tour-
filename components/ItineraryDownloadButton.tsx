@@ -54,11 +54,26 @@ export default function ItineraryDownloadButton({ tour }: ItineraryDownloadButto
             }),
             new Paragraph({
               children: [
-                new TextRun({ text: "Price: ", bold: true }),
-                new TextRun(tour.price),
+                new TextRun({ text: "Best Time to Visit: ", bold: true }),
+                new TextRun(tour.bestTime),
               ],
-              spacing: { after: 400 },
+              spacing: { after: 200 },
             }),
+
+            // Places to Visit
+            new Paragraph({
+              text: "Places to Visit",
+              heading: HeadingLevel.HEADING_1,
+              spacing: { before: 400, after: 200 },
+            }),
+            ...tour.places.map(
+              (place) =>
+                new Paragraph({
+                  text: `• ${place}`,
+                  spacing: { after: 120 },
+                })
+            ),
+            new Paragraph({ text: "", spacing: { after: 200 } }),
 
             // Description
             new Paragraph({
@@ -106,24 +121,40 @@ export default function ItineraryDownloadButton({ tour }: ItineraryDownloadButto
               spacing: { before: 400, after: 200 },
             }),
             ...tour.itinerary.flatMap((item) => [
+              // Day heading: "Day 1 ( Arrival in Paro – Thimphu )"
               new Paragraph({
                 children: [
-                  new TextRun({ text: `Day ${item.day}: ${item.title}`, bold: true }),
+                  new TextRun({
+                    text: `Day ${item.day} ( ${item.title} )`,
+                    bold: true,
+                    size: 28, // 14pt — larger, bold title
+                  }),
                 ],
-                spacing: { before: 200, after: 120 },
+                spacing: { before: 320, after: 120 },
               }),
+              // Description — smaller than the title
               new Paragraph({
-                text: item.description,
+                children: [
+                  new TextRun({
+                    text: item.description,
+                    size: 20, // 10pt — smaller body text
+                  }),
+                ],
                 spacing: { after: 120 },
               }),
+              // Overnight line
               new Paragraph({
                 children: [
-                  new TextRun({ text: "Overnight: ", italics: true }),
-                  new TextRun({ text: item.overnight, italics: true }),
+                  new TextRun({ text: "Overnight : ", bold: true, size: 22 }),
+                  new TextRun({ text: item.overnight, size: 22 }),
                 ],
-                spacing: { after: 400 },
+                spacing: { after: 320 },
               }),
+              // Blank separator line between days
+              new Paragraph({ text: "", spacing: { after: 0 } }),
             ]),
+
+
 
             // Footer
             new Paragraph({
